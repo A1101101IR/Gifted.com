@@ -1,0 +1,28 @@
+{
+    "test": [
+        {
+            "name": "Amir",
+            "efternamn": "Nabizadeh",
+            "color": "Red",
+            "id": 1
+        },
+        {
+            "name": "Oscar",
+            "efternamn": "Rainergren",
+            "color": "Blue",
+            "id": 2
+        },
+        {
+            "name": "Elodie",
+            "efternamn": "Pradet",
+            "color": "Green",
+            "id": 3
+        },
+        {
+            "name": "Daniel",
+            "efternamn": "Naesenius",
+            "color": "Yellow",
+            "id": 4
+        }
+    ]
+}
