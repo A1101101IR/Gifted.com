@@ -1,11 +1,13 @@
+import Footer from "./footer";
+import Header from "./Header";
+import Main from "./main";
+
 function App() {
   return (
     <div className="App">
-      <div class="container">
-        {/* Detta är en Bootstrap container */}
-
-        <h1>Hello Grupp 4!</h1>
-      </div>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
