@@ -1,5 +1,5 @@
-import Card from "./img/card.png";
-import Search from "./img/Search.png";
+import Card from "../img/card.png";
+import Search from "../img/Search.png";
 const Header = () => {
   return (
     <div className="header">

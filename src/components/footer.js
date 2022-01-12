@@ -1,6 +1,6 @@
-import Facebook from "./img/facebook.png";
-import Instagram from "./img/instagram.png";
-import Twitter from "./img/twitter.png";
+import Facebook from "../img/facebook.png";
+import Instagram from "../img/instagram.png";
+import Twitter from "../img/twitter.png";
 const Footer = () => {
   return (
     <div className="footer">
