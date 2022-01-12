@@ -1,0 +1,30 @@
+//import fonts
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+//Fonts
+$headings: "Work Sans", sans-serif;
+$parapraph: "Source Sans 3", sans-serif;
+
+//Font weight h = headings p = paragraphs
+$h-weight: 600;
+$p-weight: 400;
+
+//Font size
+$p-size: 1rem;
+
+//Beige colors
+$dark-beige: #f9f1e6;
+$light-beige: #fcf8f3;
+$white: #fffefc;
+
+//Font colors
+$dark-grey: #383838;
+$light-grey: #545454;
+
+//Center everything ;)
+@mixin center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
