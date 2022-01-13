@@ -1,6 +1,6 @@
 import Footer from "./components/footer";
 import Header from "./components/Header";
-import Main from "./main";
+import Main from "./pages/main";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
 import Login from "./pages/login";
