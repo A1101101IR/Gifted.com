@@ -5,6 +5,12 @@ body {
   background-color: $light-beige;
 }
 
+.page-title {
+  display: grid;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+}
+
 /* CSS for Header and all content in it. */
 .header {
   background-color: #f9f1e6;
@@ -75,10 +81,63 @@ a:hover {
   justify-content: center;
   .main-content {
     background-color: $light-beige;
-    width: 1280px;
   }
 }
 /* CSS for main / content page */
+.main-columns {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 2fr;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+  }
+
+.main-element {
+  padding-bottom: 10px;
+}
+
+.main-element p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-columns button {
+  border-radius: 30px;
+  background-color: lightcoral;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* CSS for shop */
+.shop {
+  display: grid;
+  justify-content: center;
+}
+.main-products {
+  display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+}
+.product {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 15px 15px 15px 15px;
+  background-color: #ddb892;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 
 /* CSS for Footer and all content in it */
 .footer {
