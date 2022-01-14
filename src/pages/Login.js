@@ -1,12 +1,17 @@
 import "./Login.scss"
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+
+
+
   return (
     <section className="section-login">
       <div className="container">
-        <div className="split">
+        <form className="split">
           <div className="logo">
             <span>Gifted.</span>
           </div>
@@ -16,8 +21,8 @@ const Login = () => {
               <p>Don't have an account yet?<Link to="/pages/singup" className="link">Sign up</Link></p>
             </div>
             <div className="inputs">
-              <input type="text" placeholder="Username" required/>
-              <input type="text" placeholder="Password" required/>
+              <input type="text" name="username"placeholder="Username" required/>
+              <input type="password" name="password" placeholder="Password" v required/>
             </div>
             <div className="button-container">
               <button>Sign in</button>
@@ -27,7 +32,7 @@ const Login = () => {
            <span>I have read and agree to the <Link to="/pages/singup"className="link">Terms of Service</Link></span>
           </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
    
