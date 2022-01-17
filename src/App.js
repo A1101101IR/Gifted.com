@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Main from "./pages/main";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Singup from "./pages/signup";
 import { Routes, Route } from "react-router-dom";
 
