@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../../variables.scss";
 
 .header {
   background-color: $dark-beige;
@@ -74,9 +74,9 @@ a:hover {
     height: auto;
     padding: 5px 20px;
     .logo-btn {
-      /* display: flex;
-        justify-content: space-between;
-        align-items: center; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       .toggle-btn {
         display: block;
       }

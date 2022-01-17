@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Search from "../img/Search.png";
-import Navicon from "../img/navicon.png";
+import Search from "../../img/Search.png";
+import Navicon from "../../img/navicon.png";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
 .header {
   background-color: #f9f1e6;
   height: 100px;
@@ -107,9 +109,15 @@ a:hover {
     padding: 5px 20px;
   }
   .header .logo-btn {
-    /* display: flex;
-        justify-content: space-between;
-        align-items: center; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header .logo-btn .toggle-btn {
     display: block;
@@ -154,6 +162,15 @@ body {
   background-color: #fcf8f3;
 }
 
+.page-title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 15px 15px 15px;
+}
+
 /* CSS for main / content page */
 .main {
   display: -webkit-box;
@@ -162,15 +179,86 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 
 .main .main-content {
   background-color: #fcf8f3;
-  width: 1280px;
 }
 
 /* CSS for main / content page */
+.main-columns {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+}
+
+.main-element {
+  padding-bottom: 10px;
+}
+
+.main-element p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main-columns button {
+  border-radius: 30px;
+  background-color: lightcoral;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* CSS for shop */
+.shop {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-products {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+}
+
+.product {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 15px 15px 15px 15px;
+  background-color: #ddb892;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 /* CSS for Footer and all content in it */
 .footer {
   background-color: #f9f1e6;

@@ -1,5 +1,5 @@
 import Footer from "./components/footer";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Main from "./pages/main";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
