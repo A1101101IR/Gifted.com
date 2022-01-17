@@ -33,7 +33,7 @@ export default function Navbar() {
           <img onClick={toggleNav} src={Navicon} width={36} />
         </div>
       </div>
-      {(toggleMenu || screenWidth > 576) && (
+      {(toggleMenu || screenWidth > 768) && (
         <nav className="navbar">
           <ul>
             <li>

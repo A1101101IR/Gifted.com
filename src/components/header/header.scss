@@ -66,11 +66,12 @@ a:hover {
   font-family: $headings;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 100px;
     height: auto;
     padding: 5px 20px;
     .logo-btn {
@@ -86,7 +87,8 @@ a:hover {
     }
     .navbar {
       flex-direction: column;
-      max-width: 576px;
+      max-width: 768px;
+      min-height: 100px;
       height: auto;
       width: 100%;
       ul {
