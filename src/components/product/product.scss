@@ -1,0 +1,50 @@
+.products-card-sm {
+  height: 300px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.product-body {
+  width: 1280px;
+  display: flex;
+}
+.product-info-box {
+  width: 60%;
+  height: auto;
+}
+.costumer-info-box {
+  width: 40%;
+
+  height: auto;
+}
+.giftcard-preview-front {
+  width: 95%;
+  height: 530px;
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 30px;
+  margin-top: 30px;
+}
+.giftcard-preview-back {
+  width: 100%;
+  height: 330px;
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 20px;
+  margin-top: 30px;
+}
+input {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid red;
+  box-sizing: border-box;
+  display: block;
+}

@@ -1,28 +1,23 @@
 {
-    "test": [
-        {
-            "name": "Amir",
-            "efternamn": "Nabizadeh",
-            "color": "Red",
-            "id": 1
-        },
-        {
-            "name": "Oscar",
-            "efternamn": "Rainergren",
-            "color": "Blue",
-            "id": 2
-        },
-        {
-            "name": "Elodie",
-            "efternamn": "Pradet",
-            "color": "Green",
-            "id": 3
-        },
-        {
-            "name": "Daniel",
-            "efternamn": "Naesenius",
-            "color": "Yellow",
-            "id": 4
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "titel": "Xbox Game Pass",
+      "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
+      "category": "game",
+      "company": "microsoft",
+      "type": "Card",
+      "price": "120"
+    },
+    {
+      "id": 2,
+      "titel": "Spotify Gift Card",
+      "description": "Spotify Premium 1 Month.",
+      "category": "music",
+      "company": "Spotify",
+      "type": "Card",
+      "price": "100"
+    }
+  ],
+  "order": []
 }
