@@ -1,10 +1,14 @@
 .products-card-sm {
-  height: 300px;
-  width: 500px;
+  height: 270px;
+  width: 400px;
   border: 1px solid black;
   border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+
+  padding: 10px;
+  a {
+    padding: 0;
+  }
 }
 .product-details-container {
   display: flex;
@@ -47,4 +51,10 @@ input {
   border: 1px solid red;
   box-sizing: border-box;
   display: block;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  width: 1280px;
+  flex-wrap: wrap;
 }

@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import useFatch from "../../useFatch";
 import ProductList from "./ProductList";
 const ProductData = () => {
-  const { product, isLoading, error } = useFatch(
-    "http://localhost:8000/products"
-  );
+  const {
+    data: product,
+    isLoading,
+    error,
+  } = useFatch("http://localhost:8000/products");
   return (
     <div>
       {error && <h2>{error}</h2>}

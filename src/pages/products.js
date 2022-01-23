@@ -1,4 +1,5 @@
 import React from "react";
+
 import Logo from "../img/gifted.png";
 
 const Products = () => {
@@ -13,7 +14,6 @@ const Products = () => {
         <div className="product">A night at the opera</div>
         <div className="product">A football game</div>
       </div>
-
     </div>
   );
 };

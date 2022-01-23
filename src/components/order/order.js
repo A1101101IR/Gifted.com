@@ -1,9 +1,17 @@
-const OrderList = () => {
-  return (
-    <div>
-      <h1>orderlist and more</h1>
-    </div>
-  );
+import { useState, useEffect } from "react";
+const Order = () => {
+  const [order, setOrder] = useState();
+  useEffect(() => {
+    fetch("http://localhost:8000/order")
+      .then((res) => {
+        return res.json();
+      })
+      .then((order) => {
+        setOrder(order);
+        /* console.log(order); */
+      });
+  }, []);
+  return <div>hello</div>;
 };
 
-export default OrderList;
+export default Order;

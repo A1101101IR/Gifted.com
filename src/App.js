@@ -8,6 +8,7 @@ import Singup from "./pages/signup";
 import { Routes, Route } from "react-router-dom";
 import Product from "./components/product/product";
 import OrderList from "./components/order/order";
+import OrderSummary from "./components/order/OrderSummary";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route path="/pages/singup" element={<Singup />}></Route>
           <Route path="/pages/products/:id" element={<Product />}></Route>
           <Route path="/components/order/order" element={<OrderList />}></Route>
+          <Route
+            path="/components/order/ordersummary"
+            element={<OrderSummary />}
+          ></Route>
         </Routes>
       </div>
       <Footer />

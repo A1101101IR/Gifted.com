@@ -6,19 +6,28 @@ import { useNavigate } from "react-router-dom";
 const Product = () => {
   const { id } = useParams();
 
-  const { product, error, isLoading } = useFatch(
-    "http://localhost:8000/products/" + id
-  );
+  const {
+    data: product,
+    error,
+    isLoading,
+  } = useFatch("http://localhost:8000/products/" + id);
 
   const [receiver, setReceiver] = useState("Name of Receiver");
   const [message, setMessage] = useState("Your message");
-  const [amount, setAmount] = useState("100;- kr");
+  const [amount, setAmount] = useState(null);
+  const [receiverMail, setReceiverMail] = useState();
   const [isPending, setIsPending] = useState(false);
   const goToOrder = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const order = { receiver, message, amount, product: [product] };
+    const order = {
+      receiver,
+      message,
+      receiverMail,
+      amount,
+      product: [product],
+    };
     setIsPending(true);
     fetch("http://localhost:8000/order", {
       method: "POST",
@@ -28,7 +37,7 @@ const Product = () => {
       setTimeout(() => {
         setIsPending(false);
         /* skapa nåt som visas eller meddelar user vad är det som händer. */
-        goToOrder("/components/order/order");
+        goToOrder("/components/order/ordersummary");
       }, 2000);
     });
   };
@@ -59,6 +68,7 @@ const Product = () => {
               <h1>{receiver}</h1>
               <p>{message}</p>
               <pre>{amount}</pre>
+              <p>{receiverMail}</p>
             </div>
 
             <form onSubmit={handleSubmit}>
@@ -78,7 +88,12 @@ const Product = () => {
               ></textarea>
               <br />
               <label>Receivers email: </label>
-              <input type="email" required />
+              <input
+                type="email"
+                required
+                value={receiverMail}
+                onChange={(e) => setReceiverMail(e.target.value)}
+              />
               <label>Your email: </label>
               <input type="email" required />
               <label>Vaule: </label>

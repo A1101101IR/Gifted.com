@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../../img/Search.png";
 import Navicon from "../../img/navicon.png";
+import Card from "../../img/card.png";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -26,7 +27,7 @@ export default function Navbar() {
   return (
     <div className="header">
       <div className="logo-btn">
-        <Link to="/" className="link logo">
+        <Link to="/" className="toggle-btn logo">
           Gifted.
         </Link>
         <div className="toggle-btn">
@@ -36,6 +37,11 @@ export default function Navbar() {
       {(toggleMenu || screenWidth > 768) && (
         <nav className="navbar">
           <ul>
+            <li>
+              <Link to="/" className="link logo">
+                Gifted.
+              </Link>
+            </li>
             <li>
               <Link to="pages/products" className="link">
                 Products
@@ -61,6 +67,9 @@ export default function Navbar() {
             </Link>
             <Link to="pages/singup" className="link">
               Singup
+            </Link>
+            <Link to="components/order/OrderSummary" className="link">
+              <img className="shopping-card-icon" src={Card} width={30} />
             </Link>
           </div>
         </nav>

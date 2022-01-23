@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../img/gifted.png";
 /* import ProductDetails from "../components/product/product";
+import ProductList from "../components/product/ProductList";
+import ProductData from "../components/product/ProductData";
 import ProductList from "../components/product/ProductList"; */
-/* import ProductData from "../components/product/ProductData"; */
-/* import ProductList from "../components/product/ProductList"; */
 import ProductData from "../components/product/ProductData";
 
 const Main = () => {
