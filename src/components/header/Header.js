@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import SearchBar from "../searchBar"
 import SearchPic from "../../img/Search.png";
 import Navicon from "../../img/navicon.png";
 import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -50,6 +50,7 @@ export default function Navbar() {
           </ul>
 
           <div className="search">
+
             <form action="">
               <img src={SearchPic} width={22} />
               <input type="text" value="Search for gift cards" />

@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Main from "./pages/main";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
+import SearchBar from "./pages/SearchBar"
 import Login from "./pages/Login";
 import Signup from "./pages/signup";
 import { Routes, Route } from "react-router-dom";
