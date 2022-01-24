@@ -1,21 +1,40 @@
-import React from "react";
-import Logo from "../img/gifted.png";
+import React from 'react';
+import JSONDATA from '../db.json'
+import { useState } from 'react';
+import css from './products.css';
 
-const Products = () => {
+function Products() {
+
+  const [searchTerm, setSearchTerm] = useState('')
   return (
-    <div className="main shop">
-      <h1 className="page-title">Products</h1>
-      <div className="main-products">
-        <div className="product">A treehotel night</div>
-        <div className="product">A night at the museum</div>
-        <div className="product">A cooking lesson</div>
-        <div className="product">A massage at the SPA</div>
-        <div className="product">A night at the opera</div>
-        <div className="product">A football game</div>
-      </div>
+    <div className="products">
+      <input
+        type="text"
+        placeholder="Search Products"
+        onChange={(event) => {
+          setSearchTerm(event.target.value);
+        }}
+      />
 
+      {JSONDATA.filter((val) => {
+        if (searchTerm == "") {
+          return val
+        } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+          return val
+        }
+      }).map((val, key) => {
+        return (
+          <div className="user" key={key}>
+            <p>{val.title} </p>
+          </div>
+        );
+
+      })}
     </div>
+
   );
-};
+
+
+}
 
 export default Products;

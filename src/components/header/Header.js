@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Search from "../../img/Search.png";
+import SearchBar from "../searchBar"
+import SearchPic from "../../img/Search.png";
 import Navicon from "../../img/navicon.png";
 import { Link } from "react-router-dom";
 
@@ -50,7 +51,7 @@ export default function Navbar() {
 
           <div className="search">
             <form action="">
-              <img src={Search} width={22} />
+              <img src={SearchPic} width={22} />
               <input type="text" value="Search for gift cards" />
             </form>
           </div>
@@ -60,7 +61,7 @@ export default function Navbar() {
               Login
             </Link>
             <Link to="pages/singup" className="link">
-              Singup
+              Sign up
             </Link>
           </div>
         </nav>

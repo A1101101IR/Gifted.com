@@ -10,7 +10,7 @@ const ProductList = ({ product }) => {
             <p>{product.description}</p>
             <span>{product.price} ;-kr</span>
             <br />
-            <button>Detalis</button>
+            <button>Details</button>
             <button>buy</button>
           </Link>
         </div>
