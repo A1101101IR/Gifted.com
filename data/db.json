@@ -154,5 +154,23 @@
       "price": "120"
     }
   ],
-  "order": []
+  "order": [
+    {
+      "receiver": "Oscar Rainergren",
+      "message": "Hope you have an amazing day",
+      "amount": "1000",
+      "product": [
+        {
+          "id": 1,
+          "titel": "Xbox Game Pass",
+          "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
+          "category": "game",
+          "company": "microsoft",
+          "type": "Card",
+          "price": "120"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }

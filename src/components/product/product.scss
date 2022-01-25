@@ -40,11 +40,14 @@
   padding: 20px;
   margin-top: 30px;
 }
-input {
-  width: 100%;
-  padding: 5px 10px;
-  margin: 10px 0;
-  border: 1px solid red;
-  box-sizing: border-box;
-  display: block;
+
+.product-details-container {
+  input {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    display: block;
+  }
 }
