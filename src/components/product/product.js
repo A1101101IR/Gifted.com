@@ -2,6 +2,7 @@ import { Navigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
 import useFatch from "../../useFatch";
 import { useNavigate } from "react-router-dom";
+import ProductData from "./ProductData";
 
 const Product = () => {
   const { id } = useParams();
@@ -49,14 +50,32 @@ const Product = () => {
       {product && (
         <div className="product-body">
           <div className="product-info-box">
-            <div className="giftcard-preview-front">
-              <div>
-                <h2>{product.titel}</h2>
-                <p>{product.description}</p>
+            <div class="giftcard-preview">
+              <div class="giftcard-preview-body">
+                <div class="giftcard-preview-front">
+                  <div>
+                    <h2>{product.titel}</h2>
+                    <p>{product.description}</p>
+                  </div>
+                  <span>${product.price}</span>
+                </div>
+                <div class="giftcard-preview-back">
+                  <div>
+                    <h1>{receiver}</h1>
+                    <p>{receiverMail}</p>
+                    <p>
+                      Jag tänkter att baksidan av kortet ska visas även när
+                      användaren gör hover eller börjar skriva nåt på form
+                      delen.
+                    </p>
+                    <p>{message}</p>
+                  </div>
+                  <pre>{amount}</pre>
+                </div>
               </div>
-              <span>{product.price} ;-kr </span>
             </div>
-            <h2>info about this card</h2>
+
+            <h3>Briefly about this product</h3>
             <ul>
               <li className="category">Product id: {product.id}</li>
               <li className="category">Product category: {product.category}</li>
@@ -65,17 +84,18 @@ const Product = () => {
             </ul>
           </div>
           <div className="costumer-info-box">
-            <div className="giftcard-preview-back">
+            {/* <div className="giftcard-preview-back">
               <div>
                 <h1>{receiver}</h1>
                 <p>{receiverMail}</p>
                 <p>{message}</p>
               </div>
               <pre>{amount}</pre>
-            </div>
-
-            <form onSubmit={handleSubmit}>
+            </div> */}
+            <h3>Customize your digital gift card!!</h3>
+            <form className="form__container" onSubmit={handleSubmit}>
               <label>For: </label>
+
               <input
                 type="text"
                 required
@@ -103,27 +123,42 @@ const Product = () => {
                 onChange={(e) => setReceiverMail(e.target.value)}
               />
 
-              <label>Your email: </label>
-              <input type="email" required value={"Your@Email.com"} />
+              {/* <label>Your email: </label>
+              <input type="email" required value={"Your@Email.com"} /> */}
 
               <label>Vaule: </label>
               <input
                 type="number"
                 required
-                defaultValue={100}
+                step="100"
+                defaultValue={product.price}
                 onChange={(e) => setAmount(e.target.value)}
               />
-
-              {!isPending && <button className="my-btn">Add to Card</button>}
-              {isPending && (
-                <button className="my-btn" disabled>
-                  Creating giftcard...
+              <div className="form-btn-div">
+                <button className="my-btn">
+                  Add background image (not available)
                 </button>
-              )}
+                {!isPending && <button className="my-btn">Add to Card</button>}
+
+                {isPending && (
+                  <button className="my-btn" disabled>
+                    Creating giftcard...
+                  </button>
+                )}
+              </div>
             </form>
+            <div className="ex-cards">
+              <div className="cards">Coming soon!</div>
+              <div className="cards">Coming soon!</div>
+              <div className="cards">Coming soon!</div>
+            </div>
           </div>
         </div>
       )}
+      <div className="space-between-element">
+        <h3>Gifted.com best-selling products this week! </h3>
+      </div>
+      <ProductData />
     </div>
   );
 };

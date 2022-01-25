@@ -18,8 +18,9 @@ const OrderList = ({ order }) => {
   return (
     <div className="order-list">
       <div className="order-navbar">
-        <h1>Here is Order Summary</h1>
-        <h1 className="order-notification">{notification}</h1>
+        <h2>
+          You have <span>{notification}</span> items in your shopping cart!{" "}
+        </h2>
       </div>
       {order.map((order) => (
         <div className="order-block" key={(order.id, order.product)}>
@@ -48,12 +49,10 @@ const OrderList = ({ order }) => {
         </div>
       ))}
       <div className="order-summary-peymant">
-        <div></div>
-        <div>
-          <h3>Subtotal: ${sum.reduce((a, v) => a + v)}</h3>
-          <button className="my-btn">Checkout</button>
-          {/* <p>{notification}</p> */}
-        </div>
+        <h3>Subtotal: ${sum.reduce((a, v) => a + v)}</h3>
+        <button className="my-btn">
+          Checkout ${sum.reduce((a, v) => a + v)}
+        </button>
       </div>
     </div>
   );
