@@ -7,7 +7,7 @@ const ProductList = ({ product }) => {
         <div className="products-card-sm" key={product.id}>
           <div className="product-info-before">
             <h2>{product.titel}</h2>
-            <p>{product.description}</p>
+            <p>{product.description.substring(0, 125)}...</p>
           </div>
           <div className="product-pris-btn">
             <span>${product.price}</span>
