@@ -152,6 +152,60 @@
       "company": "mcdonalds",
       "type": "Card",
       "price": 100
+    },
+    {
+      "id": 17,
+      "titel": "Treehotel night",
+      "description": "Spend a night at a tree hotel in Sweden",
+      "category": "hotel",
+      "company": "Tree-resort",
+      "type": "Card",
+      "price": "5000"
+    },
+    {
+      "id": 18,
+      "titel": "A night at the museum",
+      "description": "Find out the National Museum of Natural History during late hours",
+      "category": "museum",
+      "company": "national museum of natural history",
+      "type": "Card",
+      "price": "300"
+    },
+    {
+      "id": 19,
+      "titel": "A cooking lesson",
+      "description": "Learn how to cook food with the best of all chefs, Cyril Lignac.",
+      "category": "cooking",
+      "company": "Cyril Lignac",
+      "type": "Card",
+      "price": "1500"
+    },
+    {
+      "id": 20,
+      "titel": "A massage at a japanese SPA",
+      "description": "Spend the weekend at the japanese SPA Yasuragi and relax",
+      "category": "massage",
+      "company": "Yasuragi",
+      "type": "Card",
+      "price": "5000"
+    },
+    {
+      "id": 21,
+      "titel": "A night at the opera",
+      "description": "Listen to La Bohème at the opera on a Monday evening",
+      "category": "opera",
+      "company": "Royal Opera of Stockholm",
+      "type": "Card",
+      "price": "600"
+    },
+    {
+      "id": 22,
+      "titel": "A football game",
+      "description": "Watch a football game at Friends Arena",
+      "category": "football",
+      "company": "AIK",
+      "type": "Card",
+      "price": "400"
     }
   ],
   "order": [
