@@ -1,17 +1,19 @@
-import { useState, useEffect } from "react";
+import useFatch from "../../useFatch";
+import OrderList from "./OrderList";
 const Order = () => {
-  const [order, setOrder] = useState();
-  useEffect(() => {
-    fetch("http://localhost:8000/order")
-      .then((res) => {
-        return res.json();
-      })
-      .then((order) => {
-        setOrder(order);
-        /* console.log(order); */
-      });
-  }, []);
-  return <div>hello</div>;
+  const {
+    data: order,
+    isLoading,
+    error,
+  } = useFatch("http://localhost:8000/order");
+
+  return (
+    <div className="order-body">
+      {error && <h2>{error}</h2>}
+      {isLoading && <h2>Loading...</h2>}
+      {order && <OrderList order={order} />}
+    </div>
+  );
 };
 
 export default Order;

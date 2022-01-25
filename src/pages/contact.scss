@@ -7,13 +7,16 @@
     object-fit: cover;
   }
 }
-
+.about-body {
+  width: 100%;
+}
 .about {
   height: auto;
   margin: 4rem;
   margin-bottom: 3rem;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   &__split {
     display: grid;

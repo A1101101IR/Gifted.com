@@ -5,14 +5,16 @@ const ProductList = ({ product }) => {
     <div className="product-list">
       {product.map((product) => (
         <div className="products-card-sm" key={product.id}>
-          <Link to={`/pages/products/${product.id}`}>
+          <div className="product-info-before">
             <h2>{product.titel}</h2>
             <p>{product.description}</p>
-            <span>{product.price} ;-kr</span>
-            <br />
-            <button>Detalis</button>
-            <button>buy</button>
-          </Link>
+          </div>
+          <div className="product-pris-btn">
+            <span>${product.price}</span>
+            <Link to={`/pages/products/${product.id}`}>
+              <button className="my-btn">Detalis</button>
+            </Link>
+          </div>
         </div>
       ))}
     </div>

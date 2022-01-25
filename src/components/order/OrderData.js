@@ -9,7 +9,7 @@ const OrderData = () => {
   } = useFatch("http://localhost:8000/order");
 
   return (
-    <div className="order-body">
+    <div className="main">
       {error && <h2>{error}</h2>}
       {isLoading && <h2>Loading...</h2>}
       {order && <OrderList order={order} />}

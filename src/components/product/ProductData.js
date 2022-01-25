@@ -8,7 +8,7 @@ const ProductData = () => {
     error,
   } = useFatch("http://localhost:8000/products");
   return (
-    <div>
+    <div className="main">
       {error && <h2>{error}</h2>}
       {isLoading && <h2>Loading...</h2>}
       {product && <ProductList product={product} />}

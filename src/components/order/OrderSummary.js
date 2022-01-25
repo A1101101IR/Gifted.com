@@ -1,11 +1,15 @@
 import ProductData from "../product/ProductData";
-import OrderData from "./OrderData";
+import Order from "./order";
+import useFatch from "../../useFatch";
 
 const OrderSummary = () => {
+  const { data: product } = useFatch("http://localhost:8000/products");
   return (
     <div className="order-summary-container">
-      <OrderData />
-      <h3 className="center-text-line">Other products we recommend!</h3>
+      <Order />
+      <div className="space-between-element">
+        <h3>Other products we recommend!</h3>
+      </div>
       <ProductData />
     </div>
   );

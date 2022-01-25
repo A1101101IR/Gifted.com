@@ -19,9 +19,12 @@ body {
   display: flex;
   justify-content: center;
   height: auto;
-  .main-content {
-    background-color: $light-beige;
-  }
+}
+.main-content {
+  background-color: $light-beige;
+  display: flex;
+  justify-content: center;
+  max-width: 1280;
 }
 /* CSS for main / content page */
 .main-columns {
@@ -45,7 +48,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.main-columns button {
+button {
   border-radius: 30px;
   background-color: lightcoral;
   font-size: 15px;

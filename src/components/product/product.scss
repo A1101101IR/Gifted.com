@@ -1,14 +1,38 @@
+.product-list {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  flex-wrap: wrap;
+}
 .products-card-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 270px;
   width: 400px;
-  border: 1px solid black;
+  background-color: $dark-beige;
+  border: 2px solid black;
+  position: relative;
   border-radius: 20px;
   margin: 10px;
-
-  padding: 10px;
+  padding: 15px;
+  text-align: start;
+  .product-pris-btn {
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 2rem;
+    }
+  }
   a {
     padding: 0;
   }
+}
+button {
+  @include this-btn;
+}
+.products-card-sm:hover {
+  box-shadow: 2px 3px 10px 1px $dark-grey;
 }
 .product-details-container {
   display: flex;
@@ -29,32 +53,28 @@
   height: auto;
 }
 .giftcard-preview-front {
+  @include this-card;
   width: 95%;
   height: 530px;
-  border: 1px solid red;
   border-radius: 50px;
   padding: 30px;
   margin-top: 30px;
 }
 .giftcard-preview-back {
+  @include this-card;
   width: 100%;
   height: 330px;
-  border: 1px solid red;
   border-radius: 50px;
   padding: 20px;
   margin-top: 30px;
 }
-input {
+input,
+textarea {
   width: 100%;
   padding: 5px 10px;
   margin: 10px 0;
-  border: 1px solid red;
+  border-radius: 5px;
   box-sizing: border-box;
   display: block;
-}
-.product-list {
-  display: flex;
-  justify-content: center;
-  width: 1280px;
-  flex-wrap: wrap;
+  /* @include this-card; */
 }
