@@ -18,7 +18,7 @@ const Contact = () => {
               <h1>This is Gifted.</h1>
               <span>Load It. Gift It. Get it.</span>
             </div>
-            <div>
+            <div className="about__split__center">
               <p>
                 GiftCards.com™, the highest-ranking and most-trafficked gift
                 card website on the Internet, is your one-stop shop for gift
