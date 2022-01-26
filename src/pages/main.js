@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../img/gifted.png";
 import SearchBar from "./SearchBar";
+import Explore from "../components/explore/Explore";
 
 const scrollToProducts = () => {
   window.scrollTo({
@@ -13,6 +14,7 @@ const scrollToProducts = () => {
 const Main = () => {
   return (
     <div>
+      <Explore />
       <SearchBar />
     </div>
   );

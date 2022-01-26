@@ -51,12 +51,12 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <div className="search">
+          {/* <div className="search">
             <form action="">
               <img src={Search} width={22} />
               <input type="text" value="Search for gift cards" />
             </form>
-          </div>
+          </div> */}
 
           <div className="login">
             <Link to="pages/login" className="link">

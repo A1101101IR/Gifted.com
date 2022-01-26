@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useFatch from "../useFatch";
 import "./products.css";
 import { Link } from "react-router-dom";
+import Search from "../img/Search.png";
 
 function App() {
   const { data: product } = useFatch("http://localhost:8000/products");
@@ -25,15 +26,17 @@ function App() {
 
   return (
     <div className="main shop">
-      <h2 className="page-title">Products</h2>
+      {/* <h2 className="page-title">Products</h2> */}
       <div className="page-title">
-        Filter products: {""}
-        <input
-          type="text"
-          className="search"
-          value={search}
-          onChange={handleSearchChange}
-        />
+        <div className="search-bar">
+          <span>Search for gift cards: {""}</span>
+          <input
+            type="text"
+            className="search"
+            value={search}
+            onChange={handleSearchChange}
+          />
+        </div>
       </div>
       {/* <h2 className="page-title">Gift cards</h2> */}
       <div className="product-list">
