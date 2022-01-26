@@ -52,14 +52,14 @@ const Product = () => {
           <div className="product-info-box">
             <div class="giftcard-preview">
               <div class="giftcard-preview-body">
-                <div class="giftcard-preview-front">
+                <div class={`giftcard-preview-front  ${product.company}`}>
                   <div>
                     <h2>{product.titel}</h2>
                     <p>{product.description}</p>
                   </div>
                   <span>${product.price}</span>
                 </div>
-                <div class="giftcard-preview-back">
+                <div class={`giftcard-preview-back  ${product.company}`}>
                   <div>
                     <h1>{receiver}</h1>
                     <p>{receiverMail}</p>

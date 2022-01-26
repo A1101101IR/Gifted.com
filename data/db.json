@@ -149,7 +149,7 @@
       "titel": "Chipotle Gift Card",
       "description": "With more than 2,000 restaurants across America, there are plenty of places to use a Chipotle gift card.",
       "category": "food",
-      "company": "mcdonalds",
+      "company": "chipotle",
       "type": "Card",
       "price": 100
     },
@@ -167,7 +167,7 @@
       "titel": "A night at the museum",
       "description": "Find out the National Museum of Natural History during late hours",
       "category": "museum",
-      "company": "national museum of natural history",
+      "company": "national-museum-of-natural-history",
       "type": "Card",
       "price": "300"
     },
@@ -176,7 +176,7 @@
       "titel": "A cooking lesson",
       "description": "Learn how to cook food with the best of all chefs, Cyril Lignac.",
       "category": "cooking",
-      "company": "Cyril Lignac",
+      "company": "Cyril-Lignac",
       "type": "Card",
       "price": "1500"
     },
@@ -194,7 +194,7 @@
       "titel": "A night at the opera",
       "description": "Listen to La Bohème at the opera on a Monday evening",
       "category": "opera",
-      "company": "Royal Opera of Stockholm",
+      "company": "Royal-Opera-of-Stockholm",
       "type": "Card",
       "price": "600"
     },
@@ -277,6 +277,23 @@
         }
       ],
       "id": 4
+    },
+    {
+      "receiver": "Sven Svensson",
+      "message": "Your message",
+      "amount": 100,
+      "product": [
+        {
+          "id": 1,
+          "titel": "Xbox Game Pass",
+          "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
+          "category": "game",
+          "company": "microsoft",
+          "type": "Card",
+          "price": 100
+        }
+      ],
+      "id": 5
     }
   ]
 }

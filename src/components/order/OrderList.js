@@ -26,7 +26,7 @@ const OrderList = ({ order }) => {
         <div className="order-block" key={(order.id, order.product)}>
           <div className="order-card">
             {order.product.map((product) => (
-              <div className="card" key={product.id}>
+              <div className={`card ${product.company}`} key={product.id}>
                 <h3>{product.titel}</h3>
                 <p>${order.amount}</p>
                 {/* {console.log(order.id)} */}
