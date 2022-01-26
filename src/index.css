@@ -259,6 +259,10 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.products:hover {
+  background-color: grey;
+  }
+
 /* CSS for Footer and all content in it */
 .footer {
   background-color: #f9f1e6;

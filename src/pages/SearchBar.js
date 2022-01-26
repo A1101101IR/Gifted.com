@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./products.css";
 import products from "./products.json";
 
+
 function App() {
     const [search, setNewSearch] = useState('')
 
@@ -20,7 +21,7 @@ function App() {
         <div className="main shop">
             <h2 className="page-title">Products</h2>
             <div className="page-title">Filter products: {""}
-                <input type="text" className="ui search" value={search} onChange={handleSearchChange} /></div>
+                <input type="text" className="search" value={search} onChange={handleSearchChange} /></div>
             <h2 className="page-title">Gift cards</h2>
 
             <div className="main-products">
