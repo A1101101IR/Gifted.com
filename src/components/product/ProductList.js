@@ -4,7 +4,7 @@ const ProductList = ({ product }) => {
   return (
     <div className="product-list">
       {product.map((product) => (
-        <div className="products-card-sm" key={product.id}>
+        <div className={`products-card-sm ${product.company}`} key={product.id}>
           <div className="product-info-before">
             <h2>{product.titel}</h2>
             <p>{product.description.substring(0, 125)}...</p>
