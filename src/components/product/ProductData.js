@@ -11,7 +11,6 @@ const ProductData = () => {
     <div className="main">
       {error && <h2>{error}</h2>}
       {isLoading && <h2>Loading...</h2>}
-
       {product && <ProductList product={product} />}
     </div>
   );
