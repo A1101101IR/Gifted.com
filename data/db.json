@@ -7,16 +7,17 @@
       "category": "game",
       "company": "microsoft",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 2,
       "title": "Spotify Gift Card",
+      "titel": "Spotify Premium",
       "description": "Spotify Premium lets you download up to 10,000 songs so you can listen when you're away from the internet or just want to cut down on your data usage. And you can do this on up to five different devices ",
       "category": "music",
       "company": "Spotify",
       "type": "Card",
-      "price": "100"
+      "price": 200
     },
     {
       "id": 3,
@@ -25,7 +26,7 @@
       "category": "music",
       "company": "Tidal",
       "type": "Card",
-      "price": "100"
+      "price": 300
     },
     {
       "id": 4,
@@ -34,7 +35,7 @@
       "category": "music",
       "company": "Youtube",
       "type": "Card",
-      "price": "100"
+      "price": 200
     },
     {
       "id": 5,
@@ -43,7 +44,7 @@
       "category": "game",
       "company": "sony",
       "type": "Card",
-      "price": "100"
+      "price": 200
     },
     {
       "id": 6,
@@ -52,7 +53,7 @@
       "category": "game",
       "company": "sony",
       "type": "Card",
-      "price": "100"
+      "price": 200
     },
     {
       "id": 7,
@@ -61,7 +62,7 @@
       "category": "game",
       "company": "nintendo",
       "type": "Card",
-      "price": "120"
+      "price": 300
     },
     {
       "id": 8,
@@ -70,7 +71,7 @@
       "category": "game",
       "company": "steam",
       "type": "Card",
-      "price": "150"
+      "price": 100
     },
     {
       "id": 9,
@@ -79,7 +80,7 @@
       "category": "game",
       "company": "epic-games",
       "type": "Card",
-      "price": "100"
+      "price": 100
     },
     {
       "id": 10,
@@ -88,7 +89,7 @@
       "category": "game",
       "company": "riot",
       "type": "Card",
-      "price": "100"
+      "price": 100
     },
     {
       "id": 11,
@@ -97,7 +98,7 @@
       "category": "fashion",
       "company": "asos",
       "type": "Card",
-      "price": "150"
+      "price": 100
     },
     {
       "id": 12,
@@ -106,7 +107,7 @@
       "category": "fashion",
       "company": "gap",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 13,
@@ -115,7 +116,7 @@
       "category": "fashion",
       "company": "nike",
       "type": "Card",
-      "price": "100"
+      "price": 100
     },
     {
       "id": 14,
@@ -124,7 +125,7 @@
       "category": "fashion",
       "company": "nordstrom",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 15,
@@ -133,7 +134,7 @@
       "category": "fashion",
       "company": "rayban",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 16,
@@ -142,20 +143,20 @@
       "category": "food",
       "company": "mcdonalds",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 17,
       "title": "Chipotle Gift Card",
       "description": "With more than 2,000 restaurants across America, there are plenty of places to use a Chipotle gift card.",
       "category": "food",
-      "company": "mcdonalds",
+      "company": "chipotle",
       "type": "Card",
-      "price": "120"
+      "price": 100
     },
     {
       "id": 18,
-      "title": "Treehotel night",
+      "titel": "Treehotel night",
       "description": "Spend a night at a tree hotel in Sweden",
       "category": "hotel",
       "company": "Tree-resort",
@@ -164,25 +165,25 @@
     },
     {
       "id": 19,
-      "title": "A night at the museum",
+      "titel": "A night at the museum",
       "description": "Find out the National Museum of Natural History during late hours",
       "category": "museum",
-      "company": "national museum of natural history",
+      "company": "national-museum-of-natural-history",
       "type": "Card",
       "price": "300"
     },
     {
       "id": 20,
-      "title": "A cooking lesson",
+      "titel": "A cooking lesson",
       "description": "Learn how to cook food with the best of all chefs, Cyril Lignac.",
       "category": "cooking",
-      "company": "Cyril Lignac",
+      "company": "Cyril-Lignac",
       "type": "Card",
       "price": "1500"
     },
     {
       "id": 21,
-      "title": "A massage at a japanese SPA",
+      "titel": "A massage at a japanese SPA",
       "description": "Spend the weekend at the japanese SPA Yasuragi and relax",
       "category": "massage",
       "company": "Yasuragi",
@@ -191,21 +192,21 @@
     },
     {
       "id": 22,
-      "title": "A night at the opera",
+      "titel": "A night at the opera",
       "description": "Listen to La Bohème at the opera on a Monday evening",
       "category": "opera",
-      "company": "Royal Opera of Stockholm",
+      "company": "Royal-Opera-of-Stockholm",
       "type": "Card",
       "price": "600"
     },
     {
       "id": 23,
-      "title": "A football game",
+      "titel": "A football game",
       "description": "Watch a football game at Friends Arena",
       "category": "football",
       "company": "AIK",
       "type": "Card",
-      "price": "400"
+      "price": "120"
     }
   ],
   "order": [

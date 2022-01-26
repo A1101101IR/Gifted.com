@@ -21,8 +21,8 @@ const Login = () => {
               <p>Don't have an account yet?<Link to="/pages/singup" className="link">Sign up</Link></p>
             </div>
             <div className="inputs">
-              <input type="text" name="username"placeholder="Username" required/>
-              <input type="password" name="password" placeholder="Password" v required/>
+              <input type="text" name="username"placeholder="Username"  required/>
+              <input type="password" name="password" placeholder="Password" required/>
             </div>
             <div className="button-container">
               <button>Sign in</button>

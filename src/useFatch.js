@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 const useFatch = (url) => {
-  const [product, setProduct] = useState(null);
+  const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   useEffect(() => {
@@ -14,7 +14,7 @@ const useFatch = (url) => {
           return res.json();
         })
         .then((data) => {
-          setProduct(data);
+          setData(data);
           setIsLoading(false);
           setError(null);
         })
@@ -28,7 +28,7 @@ const useFatch = (url) => {
     }, 300);
     return () => abortCont.abort();
   }, [url]);
-  return { product, isLoading, error };
+  return { data, isLoading, error };
 };
 
 export default useFatch;

@@ -1,50 +1,265 @@
-.products-card-sm {
-  height: 300px;
-  width: 500px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-}
 .product-details-container {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  max-width: 1280px;
+  .product-body {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product-info-box {
+      width: auto;
+      height: auto;
+      .giftcard-preview {
+        background-color: transparent;
+        height: 450px;
+        width: 580px;
+        margin-bottom: 50px;
+        perspective: 1000px;
+        .giftcard-preview-body {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          .giftcard-preview-front {
+            @include this-card;
+            height: 450px;
+            width: 580px;
+            border-radius: 50px;
+            padding: 30px;
+            span {
+              align-self: flex-end;
+              font-size: 2rem;
+            }
+            p {
+              margin: 0;
+            }
+          }
+          .giftcard-preview-back {
+            @include this-card;
+            height: 450px;
+            width: 580px;
+            border-radius: 50px;
+            padding: 30px;
+          }
+        }
+        .giftcard-preview-front,
+        .giftcard-preview-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .giftcard-preview-back {
+          transform: rotateY(180deg);
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: block;
+        }
+      }
+    }
+    .costumer-info-box {
+      width: 600px;
+      height: auto;
+      input,
+      textarea {
+        width: 100%;
+        height: 40px;
+        margin: 10px 0px;
+        padding-left: 15px;
+        border-radius: 10px;
+        border: 2px solid black;
+
+        outline: none;
+        transition: 0.3s all ease;
+        font-size: 15px;
+        &:focus {
+          box-shadow: 0px 0px 10px 0px #000;
+          transition: 0.3s all ease;
+        }
+        &:hover {
+          box-shadow: 0px 0px 10px 0px #000;
+          transition: 0.3s all ease;
+        }
+      }
+      textarea {
+        height: 80px;
+      }
+      .form-btn-div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+      }
+      .ex-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cards {
+          background-color: #000;
+          height: 136px;
+          width: 195px;
+          border-radius: 10px;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+    button {
+      @include this-btn;
+    }
+  }
+}
+.giftcard-preview:hover .giftcard-preview-body {
+  transform: rotateY(180deg);
+}
+/* CSS for product cards */
+/* CSS for product cards */
+/* CSS for product cards */
+/* CSS for product cards */
+.product-list {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  max-width: 1280px;
+  flex-wrap: wrap;
+  gap: 35px;
+  .products-card-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+    width: 400px;
+    //background-color: $dark-beige; will take colors from separate classes for each company
+    border: 2px solid black;
+    position: relative;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: start;
+    .product-pris-btn {
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 2rem;
+      }
+    }
+    a {
+      padding: 0;
+    }
+  }
 }
-.product-body {
-  width: 1280px;
-  display: flex;
-}
-.product-info-box {
-  width: 60%;
-  height: auto;
-}
-.costumer-info-box {
-  width: 40%;
 
-  height: auto;
+.products-card-sm:hover {
+  box-shadow: 2px 3px 10px 1px $dark-grey;
 }
-.giftcard-preview-front {
-  width: 95%;
-  height: 530px;
-  border: 1px solid red;
-  border-radius: 50px;
-  padding: 30px;
-  margin-top: 30px;
+
+//company specific classes
+
+.microsoft {
+  background-color: #3eb54a;
+  color: white;
 }
-.giftcard-preview-back {
-  width: 100%;
-  height: 330px;
-  border: 1px solid red;
-  border-radius: 50px;
-  padding: 20px;
-  margin-top: 30px;
+
+.Spotify {
+  background-color: #41c46d;
+  color: white;
 }
-input {
-  width: 100%;
-  padding: 5px 10px;
-  margin: 10px 0;
-  border: 1px solid red;
-  box-sizing: border-box;
-  display: block;
+
+.Tidal {
+  background-color: black;
+  color: white;
+}
+
+.Youtube {
+  background-color: #f40e01;
+  color: white;
+}
+
+.sony {
+  background-color: #043ba4;
+  color: white;
+}
+
+.nintendo {
+  background-color: #e4000f;
+  color: white;
+}
+
+.steam {
+  background-color: #072f49;
+  color: white;
+}
+
+.epic-games {
+  background-color: #389fd2;
+  color: white;
+}
+
+.riot {
+  background-color: #1e3c58;
+  color: white;
+  h2 {
+    color: #e1ba76;
+  }
+}
+
+.asos {
+  background-color: #f78285;
+  color: black;
+}
+
+.gap {
+  background-color: #061e38;
+  color: white;
+}
+
+.rayban {
+  background-color: #e21b23;
+  color: white;
+}
+
+.mcdonalds {
+  background-color: #e40c00;
+  color: white;
+  h2 {
+    color: #f0be2e;
+  }
+}
+
+.nike {
+  background-color: #f54a1c;
+  color: white;
+}
+
+.nordstrom {
+  background-color: #534f50;
+  color: white;
+}
+
+.chipotle {
+  background-color: #e44046;
+  color: white;
+}
+
+.Tree-resort,
+.national-museum-of-natural-history,
+.Cyril-Lignac,
+.Yasuragi,
+.Royal-Opera-of-Stockholm,
+.AIK {
+  background-color: #373332;
+  color: white;
+  h2 {
+    color: #d0b670;
+  }
 }

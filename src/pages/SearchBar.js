@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+/* import useFatch from "../useFatch"; */
 import "./products.css";
 import products from "./products.json";
 
@@ -43,8 +44,11 @@ function App() {
                     );
                 })}
             </div>
+            );
+
         </div>
+
     );
-};
+}
 
 export default App;

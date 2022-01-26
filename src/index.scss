@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./components/header/header.scss";
 @import "./components/product/product.scss";
+@import "./components/order/order.scss";
 
 body {
   font-family: $parapraph;
@@ -19,9 +20,14 @@ body {
   display: flex;
   justify-content: center;
   height: auto;
-  .main-content {
-    background-color: $light-beige;
-  }
+  margin: 80px 0px;
+}
+.main-content {
+  background-color: $light-beige;
+  display: flex;
+  justify-content: center;
+  max-width: 1280;
+  margin: 0px 20px;
 }
 /* CSS for main / content page */
 .main-columns {
@@ -45,7 +51,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.main-columns button {
+button {
   border-radius: 30px;
   background-color: lightcoral;
   font-size: 15px;

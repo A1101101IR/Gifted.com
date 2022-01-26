@@ -9,9 +9,8 @@ const Footer = () => {
         Gifted.
       </Link>
       <div className="footer-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem quasi
-        dolore vel. Recusandae, natus consequatur blanditiis provident magnam
-        eius eos nemo, eaque fugit voluptates nesciunt earum!
+        GiftCards.com™, the highest-ranking and most-trafficked gift card
+        website on the Internet, is your one-stop shop for gift cards online.
       </div>
       <div className="footer-links">
         <nav>
@@ -25,11 +24,6 @@ const Footer = () => {
             <li>
               <Link to="pages/contact" className="link">
                 Contact
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="link">
-                Lorem
               </Link>
             </li>
             <li>
