@@ -6,7 +6,7 @@ const ProductList = ({ product }) => {
       {product.map((product) => (
         <div className={`products-card-sm ${product.company}`} key={product.id}>
           <div className="product-info-before">
-            <h2>{product.titel}</h2>
+            <h2>{product.title}</h2>
             <p>{product.description.substring(0, 125)}...</p>
           </div>
           <div className="product-pris-btn">

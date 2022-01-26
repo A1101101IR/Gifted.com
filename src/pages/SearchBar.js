@@ -47,7 +47,7 @@ function App() {
               key={product.id}
             >
               <div className="product-info-before">
-                <h2>{product.titel}</h2>
+                <h2>{product.title}</h2>
                 <p>{product.description.substring(0, 125)}...</p>
               </div>
               <div className="product-pris-btn">
