@@ -12,7 +12,6 @@
     {
       "id": 2,
       "title": "Spotify Gift Card",
-      "titel": "Spotify Premium",
       "description": "Spotify Premium lets you download up to 10,000 songs so you can listen when you're away from the internet or just want to cut down on your data usage. And you can do this on up to five different devices ",
       "category": "music",
       "company": "Spotify",
@@ -156,7 +155,7 @@
     },
     {
       "id": 18,
-      "titel": "Treehotel night",
+      "title": "Treehotel night",
       "description": "Spend a night at a tree hotel in Sweden",
       "category": "hotel",
       "company": "Tree-resort",
@@ -165,7 +164,7 @@
     },
     {
       "id": 19,
-      "titel": "A night at the museum",
+      "title": "A night at the museum",
       "description": "Find out the National Museum of Natural History during late hours",
       "category": "museum",
       "company": "national-museum-of-natural-history",
@@ -174,7 +173,7 @@
     },
     {
       "id": 20,
-      "titel": "A cooking lesson",
+      "title": "A cooking lesson",
       "description": "Learn how to cook food with the best of all chefs, Cyril Lignac.",
       "category": "cooking",
       "company": "Cyril-Lignac",
@@ -183,7 +182,7 @@
     },
     {
       "id": 21,
-      "titel": "A massage at a japanese SPA",
+      "title": "A massage at a japanese SPA",
       "description": "Spend the weekend at the japanese SPA Yasuragi and relax",
       "category": "massage",
       "company": "Yasuragi",
@@ -192,7 +191,7 @@
     },
     {
       "id": 22,
-      "titel": "A night at the opera",
+      "title": "A night at the opera",
       "description": "Listen to La Bohème at the opera on a Monday evening",
       "category": "opera",
       "company": "Royal-Opera-of-Stockholm",
@@ -201,7 +200,7 @@
     },
     {
       "id": 23,
-      "titel": "A football game",
+      "title": "A football game",
       "description": "Watch a football game at Friends Arena",
       "category": "football",
       "company": "AIK",
@@ -217,7 +216,7 @@
       "product": [
         {
           "id": 1,
-          "titel": "Xbox Game Pass",
+          "title": "Xbox Game Pass",
           "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
           "category": "game",
           "company": "microsoft",
