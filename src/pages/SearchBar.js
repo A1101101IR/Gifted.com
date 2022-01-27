@@ -41,7 +41,7 @@ function App() {
       {/* <h2 className="page-title">Gift cards</h2> */}
       <div className="product-list">
         {product &&
-          filtered.map((product) => (
+          filtered.slice(0, 12).map((product) => (
             <div
               className={`products-card-sm ${product.company}`}
               key={product.id}
@@ -59,7 +59,6 @@ function App() {
             </div>
           ))}
       </div>
-      );
     </div>
   );
 }

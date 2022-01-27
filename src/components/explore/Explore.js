@@ -1,5 +1,6 @@
 import Logo from "../../img/gifted.png";
 import ProductData from "../product/ProductData";
+import { Link } from "react-router-dom";
 const Explore = () => {
   return (
     <div className="Explore-container">
@@ -11,7 +12,9 @@ const Explore = () => {
           successes.
         </p>
         <div>
-          <button>Explore</button>
+          <Link to="pages/products">
+            <button>Explore</button>
+          </Link>
         </div>
       </div>
 
