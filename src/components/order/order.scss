@@ -7,11 +7,21 @@
     .order-navbar {
       display: flex;
       justify-content: space-between;
+      h2 {
+        margin: auto;
+        margin-bottom: 1rem;
+      }
     }
     .order-block {
       padding: 15px 0;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 620px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .order-card {
         .card {
           display: flex;
@@ -58,12 +68,20 @@
           list-style-type: none;
           padding: 0;
           margin: 0;
+          @media screen and (max-width: 620px) {
+            margin: 0.7rem auto;
+          }
           li {
             padding: 5px;
             text-decoration: none;
             font-size: 18px;
             color: black;
             display: block;
+          }
+        }
+        .my-btn {
+          @media screen and (max-width: 620px) {
+            margin: 0.7rem auto;
           }
         }
       }

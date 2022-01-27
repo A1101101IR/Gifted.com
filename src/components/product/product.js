@@ -15,7 +15,7 @@ const Product = () => {
   const [receiver, setReceiver] = useState("Name of Receiver");
   const [message, setMessage] = useState("Your message");
   const [amount, setAmount] = useState(100);
-  const [receiverMail, setReceiverMail] = useState();
+  const [receiverMail, setReceiverMail] = useState("");
   const [isPending, setIsPending] = useState(false);
   const goToOrder = useNavigate();
 

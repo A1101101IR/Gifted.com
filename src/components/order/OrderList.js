@@ -29,7 +29,7 @@ const OrderList = ({ order,product }) => {
           <div className="order-card">
             {order.product.map((product) => (
               <div className={`card ${product.company}`} key={product.id}>
-                <h3>{product.titel}</h3>
+                <h3>{product.title}</h3>
                 <p>${order.amount}</p>
                 {/* {console.log(order.id)} */}
               </div>
