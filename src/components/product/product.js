@@ -88,7 +88,7 @@ const Product = () => {
               </div>
               <pre>{amount}</pre>
             </div> */}
-            <h3>Customize your digital gift card!!</h3>
+            <h3 >Customize your digital gift card!!</h3>
             <form className="form__container" onSubmit={handleSubmit}>
               <label>For: </label>
 
