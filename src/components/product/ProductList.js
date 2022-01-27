@@ -12,7 +12,7 @@ const ProductList = ({ product }) => {
           <div className="product-pris-btn">
             <span>${product.price}</span>
             <Link to={`/pages/products/${product.id}`}>
-              <button className="my-btn">Detalis</button>
+              <button className="my-btn">Details</button>
             </Link>
           </div>
         </div>
