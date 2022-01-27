@@ -20,7 +20,7 @@ const Contact = () => {
             </div>
             <div className="about__split__center">
               <p>
-                GiftCards.com™, the highest-ranking and most-trafficked gift
+                Gifted. the highest-ranking and most-trafficked gift
                 card website on the Internet, is your one-stop shop for gift
                 cards online.
               </p>

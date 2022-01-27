@@ -1,10 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
 /* import { useState } from "react"; */
-const OrderList = ({ order }) => {
+const OrderList = ({ order,product }) => {
   const sum = [];
   const total = "";
-  const [notification, setNotification] = useState();
+  const [notification, setNotification] = useState("");
   const { id } = useParams();
   const goToOrder = useNavigate();
   const handelClick = () => {
@@ -15,6 +15,8 @@ const OrderList = ({ order }) => {
   useEffect(() => {
     setNotification(order.length);
   }, []);
+
+
   return (
     <div className="order-list">
       <div className="order-navbar">
