@@ -15,7 +15,7 @@ const Product = () => {
   const [receiver, setReceiver] = useState("Name of Receiver");
   const [message, setMessage] = useState("Your message");
   const [amount, setAmount] = useState(100);
-  const [receiverMail, setReceiverMail] = useState();
+  const [receiverMail, setReceiverMail] = useState("");
   const [isPending, setIsPending] = useState(false);
   const goToOrder = useNavigate();
 
@@ -54,7 +54,7 @@ const Product = () => {
               <div class="giftcard-preview-body">
                 <div class={`giftcard-preview-front  ${product.company}`}>
                   <div>
-                    <h2>{product.titel}</h2>
+                    <h2>{product.title}</h2>
                     <p>{product.description}</p>
                   </div>
                   <span>${product.price}</span>
@@ -63,21 +63,17 @@ const Product = () => {
                   <div>
                     <h1>{receiver}</h1>
                     <p>{receiverMail}</p>
-                    <p>
-                      Jag tänkter att baksidan av kortet ska visas även när
-                      användaren gör hover eller börjar skriva nåt på form
-                      delen.
-                    </p>
+                    
                     <p>{message}</p>
                   </div>
-                  <pre>{amount}</pre>
+                  <pre>${amount}</pre>
                 </div>
               </div>
             </div>
 
             <h3>Briefly about this product</h3>
             <ul>
-              <li className="category">Product id: {product.id}</li>
+              <li className="category">Product value: {amount}</li>
               <li className="category">Product category: {product.category}</li>
               <li className="category">Product company: {product.company}</li>
               <li className="category">Product type: {product.type}</li>
@@ -92,14 +88,14 @@ const Product = () => {
               </div>
               <pre>{amount}</pre>
             </div> */}
-            <h3>Customize your digital gift card!!</h3>
+            <h3 >Customize your digital gift card!!</h3>
             <form className="form__container" onSubmit={handleSubmit}>
               <label>For: </label>
 
               <input
                 type="text"
                 required
-                defaultValue={"Sven Svensson"}
+                placeholder="Name"
                 onChange={(e) => setReceiver(e.target.value)}
               />
 
@@ -107,9 +103,7 @@ const Product = () => {
               <br />
               <textarea
                 required
-                defaultValue={
-                  "Grattis på namnsdagen! Jag hoppas att du har en riktigt fin namnsdag!"
-                }
+                placeholder="Message"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
 
@@ -119,7 +113,7 @@ const Product = () => {
               <input
                 type="email"
                 required
-                defaultValue={"Sven@Svensson.se"}
+                placeholder="Sven@svensson.se"
                 onChange={(e) => setReceiverMail(e.target.value)}
               />
 
