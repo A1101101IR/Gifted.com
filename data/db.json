@@ -210,43 +210,10 @@
   ],
   "order": [
     {
-      "receiver": "Oscar Rainergren",
-      "message": "Hope you have an amazing day",
-      "amount": "1000",
-      "product": [
-        {
-          "id": 1,
-          "title": "Xbox Game Pass",
-          "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
-          "category": "game",
-          "company": "microsoft",
-          "type": "Card",
-          "price": "120"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "receiver": "Name of Receiver",
-      "message": "Your message",
-      "amount": 100,
-      "product": [
-        {
-          "id": 2,
-          "title": "Spotify Gift Card",
-          "description": "Spotify Premium lets you download up to 10,000 songs so you can listen when you're away from the internet or just want to cut down on your data usage. And you can do this on up to five different devices ",
-          "category": "music",
-          "company": "Spotify",
-          "type": "Card",
-          "price": 200
-        }
-      ],
-      "id": 2
-    },
-    {
-      "receiver": "Name of Receiver",
-      "message": "Your message",
-      "amount": 100,
+      "receiver": "Amir Nabizadeh",
+      "message": "Grattis! ",
+      "receiverMail": "Amir@Nabizadeh.se",
+      "amount": "500",
       "product": [
         {
           "id": 1,
@@ -258,7 +225,7 @@
           "price": 100
         }
       ],
-      "id": 3
+      "id": 1
     }
   ]
 }

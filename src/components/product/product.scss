@@ -153,6 +153,11 @@
     }
   }
 }
+.ex-cards {
+  .cards {
+    background: radial-gradient(#0f5591 0%, #142191 100%);
+  }
+}
 
 .giftcard-preview:hover .giftcard-preview-body {
   transform: rotateY(180deg);

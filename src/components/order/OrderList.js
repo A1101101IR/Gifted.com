@@ -1,9 +1,9 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
+import useFatch from "../../useFatch";
 /* import { useState } from "react"; */
-const OrderList = ({ order,product }) => {
+const OrderList = ({ order, product }) => {
   const sum = [];
-  const total = "";
   const [notification, setNotification] = useState("");
   const { id } = useParams();
   const goToOrder = useNavigate();
@@ -15,8 +15,6 @@ const OrderList = ({ order,product }) => {
   useEffect(() => {
     setNotification(order.length);
   }, []);
-
-
   return (
     <div className="order-list">
       <div className="order-navbar">
@@ -31,7 +29,6 @@ const OrderList = ({ order,product }) => {
               <div className={`card ${product.company}`} key={product.id}>
                 <h3>{product.title}</h3>
                 <p>${order.amount}</p>
-                {/* {console.log(order.id)} */}
               </div>
             ))}
           </div>
@@ -44,9 +41,7 @@ const OrderList = ({ order,product }) => {
             <button className="my-btn" onClick={handelClick}>
               Delete
             </button>
-
             <span className="bugs">{sum.push(parseInt(order.amount))};</span>
-            {/* <span>{setNotification(order.length)}</span> */}
           </div>
         </div>
       ))}
