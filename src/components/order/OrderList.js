@@ -8,7 +8,7 @@ const OrderList = ({ order, product }) => {
   const { id } = useParams();
   const goToOrder = useNavigate();
   const handelClick = () => {
-    fetch("http://localhost:8000/order/" + id, {
+    fetch("http://localhost:8000/order/" + order.id, {
       method: "DELETE",
     }).then(console.log(order));
   };
