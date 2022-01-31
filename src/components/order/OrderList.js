@@ -1,13 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
+
+
 /* import { useState } from "react"; */
-const OrderList = ({ order,product }) => {
+const OrderList = ({ order, product }) => {
   const sum = [];
   const total = "";
   const [notification, setNotification] = useState("");
   const { id } = useParams();
   const goToOrder = useNavigate();
-  const handelClick = () => {
+  const handleClick = () => {
     fetch("http://localhost:8000/order/" + id, {
       method: "DELETE",
     }).then(console.log(order));
@@ -41,7 +43,7 @@ const OrderList = ({ order,product }) => {
               <li>Receiver mail: {order.receiverMail}</li>
               <li>Value: {order.amount}</li>
             </ul>
-            <button className="my-btn" onClick={handelClick}>
+            <button className="my-btn" onClick={handleRemove}>
               Delete
             </button>
 
@@ -50,7 +52,7 @@ const OrderList = ({ order,product }) => {
           </div>
         </div>
       ))}
-      <div className="order-summary-peymant">
+      <div className="order-summary-payment">
         <h3>Subtotal: ${sum.reduce((a, v) => a + v)}</h3>
         <button className="my-btn">
           Checkout ${sum.reduce((a, v) => a + v)}
