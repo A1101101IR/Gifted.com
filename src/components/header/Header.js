@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Search from "../../img/Search.png";
 import Navicon from "../../img/navicon.png";
 import Card from "../../img/card.png";
 import { Link } from "react-router-dom";
+
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -65,12 +65,8 @@ export default function Navbar() {
             <Link to="pages/signup" className="link">
               Sign up
             </Link>
-
             <Link to="components/order/OrderSummary" className="link newOrder">
               <img className="shopping-card-icon" src={Card} width={30} />
-              {/* <span className="order-notification">1</span> */}
-              {/* Jag försöker att rerendera detta element varje gång en ny produkt köps av kunden. */}
-              {/* <Notification /> */}
             </Link>
           </div>
         </nav>

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-/* import ProductData from "./ProductData"; */
+
 const ProductList = ({ product }) => {
   return (
     <div className="product-list">
-      {product.map((product) => (
+      {product.slice(0, 12).map((product) => (
         <div className={`products-card-sm ${product.company}`} key={product.id}>
           <div className="product-info-before">
             <h2>{product.title}</h2>

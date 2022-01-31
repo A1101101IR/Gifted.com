@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Login.scss"
+import "./Login.scss";
 
 const Signup = () => {
   return (
@@ -9,29 +9,38 @@ const Signup = () => {
           <div className="logo">
             <span>Gifted.</span>
           </div>
-          <div className="card"> 
+          <div className="card">
             <div className="card-text">
               <span>Create account</span>
-              <p>Already have an account?<Link to="/pages/login" className="link">Sign in</Link></p>
+              <p>
+                Already have an account?
+                <Link to="/pages/login" className="link">
+                  Sign in
+                </Link>
+              </p>
             </div>
             <div className="inputs">
-              <input type="text" placeholder="Username" required/>
-              <input type="text" placeholder="E-mail" required/>
-              <input type="text" placeholder="Password" required/>
-              <input type="text" placeholder="Repeat password" required/>
+              <input type="text" placeholder="Username" required />
+              <input type="text" placeholder="E-mail" required />
+              <input type="text" placeholder="Password" required />
+              <input type="text" placeholder="Repeat password" required />
             </div>
             <div className="button-container">
               <button>Sign up</button>
             </div>
             <div className="bottom">
-              <input type="checkbox" className="check"/>
-           <span>I have read and agree to the <Link to="/pages/login"className="link">Terms of Service</Link></span>
-          </div>
+              <input type="checkbox" className="check" />
+              <span>
+                I have read and agree to the{" "}
+                <Link to="/pages/login" className="link">
+                  Terms of Service
+                </Link>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-   
   );
 };
 

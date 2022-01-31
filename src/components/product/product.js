@@ -6,7 +6,6 @@ import ProductData from "./ProductData";
 
 const Product = () => {
   const { id } = useParams();
-
   const {
     data: product,
     error,
@@ -18,7 +17,6 @@ const Product = () => {
   const [receiverMail, setReceiverMail] = useState("");
   const [isPending, setIsPending] = useState(false);
   const goToOrder = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const order = {
@@ -28,9 +26,7 @@ const Product = () => {
       amount,
       product: [product],
     };
-
     setIsPending(true);
-
     fetch("http://localhost:8000/order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -50,27 +46,25 @@ const Product = () => {
       {product && (
         <div className="product-body">
           <div className="product-info-box">
-            <div class="giftcard-preview">
-              <div class="giftcard-preview-body">
-                <div class={`giftcard-preview-front  ${product.company}`}>
+            <div className="giftcard-preview">
+              <div className="giftcard-preview-body">
+                <div className={`giftcard-preview-front  ${product.company}`}>
                   <div>
                     <h2>{product.title}</h2>
                     <p>{product.description}</p>
                   </div>
                   <span>${product.price}</span>
                 </div>
-                <div class={`giftcard-preview-back  ${product.company}`}>
+                <div className={`giftcard-preview-back  ${product.company}`}>
                   <div>
                     <h1>{receiver}</h1>
                     <p>{receiverMail}</p>
-                    
                     <p>{message}</p>
                   </div>
                   <pre>${amount}</pre>
                 </div>
               </div>
             </div>
-
             <h3>Briefly about this product</h3>
             <ul>
               <li className="category">Product value: {amount}</li>
@@ -80,15 +74,7 @@ const Product = () => {
             </ul>
           </div>
           <div className="costumer-info-box">
-            {/* <div className="giftcard-preview-back">
-              <div>
-                <h1>{receiver}</h1>
-                <p>{receiverMail}</p>
-                <p>{message}</p>
-              </div>
-              <pre>{amount}</pre>
-            </div> */}
-            <h3 >Customize your digital gift card!!</h3>
+            <h3>Customize your digital gift card!!</h3>
             <form className="form__container" onSubmit={handleSubmit}>
               <label>For: </label>
 
@@ -99,6 +85,21 @@ const Product = () => {
                 onChange={(e) => setReceiver(e.target.value)}
               />
 
+              <label>Receivers email: </label>
+              <input
+                type="email"
+                required
+                placeholder="Sven@svensson.se"
+                onChange={(e) => setReceiverMail(e.target.value)}
+              />
+              <label>Vaule: </label>
+              <input
+                type="number"
+                required
+                step="100"
+                defaultValue={product.price}
+                onChange={(e) => setAmount(e.target.value)}
+              />
               <label>Message: </label>
               <br />
               <textarea
@@ -109,31 +110,14 @@ const Product = () => {
 
               <br />
 
-              <label>Receivers email: </label>
-              <input
-                type="email"
-                required
-                placeholder="Sven@svensson.se"
-                onChange={(e) => setReceiverMail(e.target.value)}
-              />
-
               {/* <label>Your email: </label>
               <input type="email" required value={"Your@Email.com"} /> */}
 
-              <label>Vaule: </label>
-              <input
-                type="number"
-                required
-                step="100"
-                defaultValue={product.price}
-                onChange={(e) => setAmount(e.target.value)}
-              />
               <div className="form-btn-div">
                 <button className="my-btn">
                   Add background image (not available)
                 </button>
                 {!isPending && <button className="my-btn">Add to Card</button>}
-
                 {isPending && (
                   <button className="my-btn" disabled>
                     Creating giftcard...
