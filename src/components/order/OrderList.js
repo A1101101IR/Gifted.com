@@ -1,24 +1,14 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
-<<<<<<< HEAD
-
-
-=======
 import useFatch from "../../useFatch";
->>>>>>> fb0b3a2cf85bd9019fa14c5081d3489c3fa6234c
 /* import { useState } from "react"; */
 const OrderList = ({ order, product }) => {
   const sum = [];
   const [notification, setNotification] = useState("");
   const { id } = useParams();
   const goToOrder = useNavigate();
-<<<<<<< HEAD
   const handleClick = () => {
-    fetch("http://localhost:8000/order/" + id, {
-=======
-  const handelClick = () => {
     fetch("http://localhost:8000/order/" + order.id, {
->>>>>>> fb0b3a2cf85bd9019fa14c5081d3489c3fa6234c
       method: "DELETE",
     }).then(console.log(order));
   };
@@ -48,7 +38,7 @@ const OrderList = ({ order, product }) => {
               <li>Receiver mail: {order.receiverMail}</li>
               <li>Value: {order.amount}</li>
             </ul>
-            <button className="my-btn" onClick={handleRemove}>
+            <button className="my-btn" onClick={handleClick}>
               Delete
             </button>
             <span className="bugs">{sum.push(parseInt(order.amount))};</span>
