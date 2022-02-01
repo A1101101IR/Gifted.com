@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import useFatch from "../useFatch";
 import "./products.css";
 import { Link } from "react-router-dom";
-import Search from "../img/Search.png";
 
 function App() {
   const { data: product } = useFatch("http://localhost:8000/products");

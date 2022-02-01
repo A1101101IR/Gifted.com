@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import Navicon from "../../img/navicon.png";
 import Card from "../../img/card.png";
 import { Link } from "react-router-dom";
-
+/* Header components som har Navbar och login/signup inuti */
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  /* Använder useEffect för att hålla koll på sidas bredd */
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
@@ -21,6 +21,7 @@ export default function Navbar() {
     };
   }, []);
 
+  /* returnerar header med dess innehåll */
   return (
     <div className="header">
       <div className="logo-btn">
@@ -50,14 +51,6 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-
-          {/* <div className="search">
-            <form action="">
-              <img src={Search} width={22} />
-              <input type="text" value="Search for gift cards" />
-            </form>
-          </div> */}
-
           <div className="login">
             <Link to="pages/login" className="link">
               Login

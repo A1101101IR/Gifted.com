@@ -171,13 +171,13 @@
   justify-content: center;
   max-width: 1280px;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 15px;
   .products-card-sm {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 270px;
-    width: 400px;
+    width: 380px;
     //background-color: $dark-beige; will take colors from separate classes for each company
     border: 2px solid black;
     position: relative;

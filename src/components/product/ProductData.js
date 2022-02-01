@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import useFatch from "../../useFatch";
 import ProductList from "./ProductList";
+/* Här hämtar vi data för att mappa genom product cards */
 const ProductData = () => {
   const {
     data: product,

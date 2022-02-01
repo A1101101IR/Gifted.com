@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+/* Här skapar vi en templete för våra product cards som visas på sidan. */
 const ProductList = ({ product }) => {
   return (
     <div className="product-list">

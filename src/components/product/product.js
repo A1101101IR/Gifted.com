@@ -3,20 +3,24 @@ import { useEffect, useState } from "react/cjs/react.development";
 import useFatch from "../../useFatch";
 import { useNavigate } from "react-router-dom";
 import ProductData from "./ProductData";
+/* Här är våran product detalj sida. */
 
 const Product = () => {
   const { id } = useParams();
+  /* Här hämtar vi data */
   const {
     data: product,
     error,
     isLoading,
   } = useFatch("http://localhost:8000/products/" + id);
+  /* här skapar vi const får data som vi kommer att få av användaren. */
   const [receiver, setReceiver] = useState("Name of Receiver");
   const [message, setMessage] = useState("Your message");
   const [amount, setAmount] = useState(100);
   const [receiverMail, setReceiverMail] = useState("");
   const [isPending, setIsPending] = useState(false);
   const goToOrder = useNavigate();
+  /* Här skapar vi post req och sparar nya order i vår json databas. */
   const handleSubmit = (e) => {
     e.preventDefault();
     const order = {
@@ -32,6 +36,7 @@ const Product = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order),
     }).then(() => {
+      /* timeout för skapa visuell känsla och sedan går till order summary */
       setTimeout(() => {
         setIsPending(false);
         goToOrder("/components/order/ordersummary");

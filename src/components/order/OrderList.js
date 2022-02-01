@@ -1,17 +1,21 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
-import useFatch from "../../useFatch";
+/* import useFatch from "../../useFatch"; */
 /* import { useState } from "react"; */
 const OrderList = ({ order, product }) => {
+  /* const { id } = useParams(); */
   const sum = [];
   const [notification, setNotification] = useState("");
-  const { id } = useParams();
   const goToOrder = useNavigate();
+
+  /* Här vi tar bort order från vår order databas */
+  /* obs funkar inte än. */
   const handelClick = () => {
     fetch("http://localhost:8000/order/" + order.id, {
       method: "DELETE",
     }).then(console.log(order));
   };
+
   useEffect(() => {
     setNotification(order.length);
   }, []);

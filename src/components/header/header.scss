@@ -1,10 +1,11 @@
 @import "../../variables.scss";
-
+/* Css för header och all element inuti. */
 .header {
   background-color: $dark-beige;
   height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
   .logo-btn {
     display: flex;
     justify-content: space-between;
@@ -18,9 +19,11 @@
     width: 1310px;
     height: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-size: 16px;
     ul {
+      margin-top: 0px;
       margin-bottom: 0px;
       padding-left: 0;
     }
@@ -81,23 +84,18 @@ a:hover {
     transform: translateX(0%);
     transform-origin: 50% 50%;
   }
-
   15% {
     transform: translateX(-30px) rotate(-6deg);
   }
-
   30% {
     transform: translateX(15px) rotate(6deg);
   }
-
   45% {
     transform: translateX(-15px) rotate(-3.6deg);
   }
-
   60% {
     transform: translateX(9px) rotate(2.4deg);
   }
-
   75% {
     transform: translateX(-6px) rotate(-1.2deg);
   }

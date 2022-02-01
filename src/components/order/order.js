@@ -1,6 +1,7 @@
 import useFatch from "../../useFatch";
 import OrderList from "./OrderList";
 const Order = () => {
+  /* Hämtar data för att använda senare i vår orderlist. */
   const {
     data: order,
     isLoading,

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+/* Vår custom hook för att fetcha data från api */
 const useFatch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

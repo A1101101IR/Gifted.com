@@ -126,61 +126,10 @@
   0% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.1);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
-/* .order-card-sm {
-  height: 250px;
-  width: 300px;
-  border: 1px solid red;
-  border-radius: 25px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  background-color: $dark-beige;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    padding: 0;
-  }
-  .order-info {
-    width: 70%;
-  }
-  .product-list {
-    display: flex;
-    width: auto;
-    border: none;
-    .product-card-sm {
-      margin: 0;
-      padding: 0;
-      height: 150px;
-      width: 250px;
-      a {
-        margin: 0;
-        h2 {
-          margin-bottom: 0;
-        }
-        p {
-          display: none;
-        }
-        span {
-          display: none;
-        }
-        button {
-          display: none;
-        }
-      }
-    }
-  }
-} */
