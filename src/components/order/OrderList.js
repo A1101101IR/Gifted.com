@@ -42,14 +42,14 @@ const OrderList = ({ order, product }) => {
               <li>Receiver mail: {order.receiverMail}</li>
               <li>Value: {order.amount}</li>
             </ul>
-            <button className="my-btn" onClick={handelClick}>
+            <button className="my-btn" onClick={handleClick}>
               Delete
             </button>
             <span className="bugs">{sum.push(parseInt(order.amount))};</span>
           </div>
         </div>
       ))}
-      <div className="order-summary-peymant">
+      <div className="order-summary-payment">
         <h3>Subtotal: ${sum.reduce((a, v) => a + v)}</h3>
         <button className="my-btn">
           Checkout ${sum.reduce((a, v) => a + v)}

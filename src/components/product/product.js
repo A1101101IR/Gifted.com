@@ -97,7 +97,7 @@ const Product = () => {
                 placeholder="Sven@svensson.se"
                 onChange={(e) => setReceiverMail(e.target.value)}
               />
-              <label>Vaule: </label>
+              <label>Value: </label>
               <input
                 type="number"
                 required

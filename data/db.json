@@ -228,9 +228,27 @@
       "id": 1
     },
     {
-      "receiver": "Amir",
+      "receiver": "Elodie",
       "message": "Hej",
-      "receiverMail": "Amir@Nabizadeh.se",
+      "receiverMail": "pradetelodie@gmail.com",
+      "amount": 100,
+      "product": [
+        {
+          "id": 1,
+          "title": "Xbox Game Pass",
+          "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
+          "category": "game",
+          "company": "microsoft",
+          "type": "Card",
+          "price": 100
+        }
+      ],
+      "id": 2
+    },
+    {
+      "receiver": "Elodie",
+      "message": "Grattis!",
+      "receiverMail": "pradetelodie@gmail.com",
       "amount": 100,
       "product": [
         {
@@ -243,7 +261,25 @@
           "price": 200
         }
       ],
-      "id": 2
+      "id": 3
+    },
+    {
+      "receiver": "elodie",
+      "message": "Hej",
+      "receiverMail": "pradetelodie@gmail.com",
+      "amount": 100,
+      "product": [
+        {
+          "id": 1,
+          "title": "Xbox Game Pass",
+          "description": "Med Xbox Game Pass Ultimate får du alla fördelarna med Xbox Live Gold, över 100 högkvalitativa spel för konsol, PC och mobila Android-enheter samt tillgång till EA Play utan extra kostnad, allt för ett lågt månadspris.",
+          "category": "game",
+          "company": "microsoft",
+          "type": "Card",
+          "price": 100
+        }
+      ],
+      "id": 4
     }
   ]
 }

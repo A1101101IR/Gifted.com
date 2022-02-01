@@ -55,8 +55,8 @@ export default function Navbar() {
             <Link to="pages/login" className="link">
               Login
             </Link>
-            <Link to="pages/singup" className="link">
-              Singup
+            <Link to="pages/signup" className="link">
+              Sign up
             </Link>
             <Link to="components/order/OrderSummary" className="link newOrder">
               <img className="shopping-card-icon" src={Card} width={30} />
