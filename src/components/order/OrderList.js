@@ -1,7 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
-/* import useFatch from "../../useFatch"; */
-/* import { useState } from "react"; */
+
 const OrderList = ({ order, product }) => {
   /* const { id } = useParams(); */
   const sum = [];
@@ -42,7 +41,7 @@ const OrderList = ({ order, product }) => {
               <li>Receiver mail: {order.receiverMail}</li>
               <li>Value: {order.amount}</li>
             </ul>
-            <button className="my-btn" onClick={handleClick}>
+            <button className="my-btn" onClick={handelClick}>
               Delete
             </button>
             <span className="bugs">{sum.push(parseInt(order.amount))};</span>
