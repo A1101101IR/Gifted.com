@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="container_heading">
           <img src={headerimg} alt="" />
         </div>
-
+        {/* Creating about section */}
         <section className="about">
           <div className="about__split">
             <div>
@@ -27,6 +27,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        {/* info section with form */}
 
         <section className="info">
           <div className="info__heading">
@@ -52,6 +53,7 @@ const Contact = () => {
             </form>
           </div>
         </section>
+        {/* extra info witch social emdia links */}
         <section className="extra">
           <div className="extra__text">
             <h2>Psst... Follow us on social media</h2>
