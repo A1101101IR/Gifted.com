@@ -4,6 +4,8 @@ const useFatch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const [notification, setNotification] = useState(null);
   useEffect(() => {
     const abortCont = new AbortController();
     setTimeout(() => {
@@ -18,6 +20,7 @@ const useFatch = (url) => {
           setData(data);
           setIsLoading(false);
           setError(null);
+          setNotification(data.length);
         })
         .catch((err) => {
           if (err.name === "AbortError") {
@@ -29,7 +32,7 @@ const useFatch = (url) => {
     }, 300);
     return () => abortCont.abort();
   }, [url]);
-  return { data, isLoading, error };
+  return { data, isLoading, error, notification };
 };
 
 export default useFatch;
