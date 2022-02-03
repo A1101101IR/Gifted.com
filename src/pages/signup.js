@@ -3,6 +3,7 @@ import "./Login.scss";
 
 const Signup = () => {
   return (
+    // Plain html, nothing functional
     <section className="section-login">
       <div className="container">
         <div className="split">
@@ -14,6 +15,7 @@ const Signup = () => {
               <span>Create account</span>
               <p>
                 Already have an account?
+                {/* link to login page */}
                 <Link to="/pages/login" className="link">
                   Sign in
                 </Link>
@@ -32,6 +34,7 @@ const Signup = () => {
               <input type="checkbox" className="check" />
               <span>
                 I have read and agree to the{" "}
+                {/* Link to login */}
                 <Link to="/pages/login" className="link">
                   Terms of Service
                 </Link>
