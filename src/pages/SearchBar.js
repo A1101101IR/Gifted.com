@@ -3,6 +3,8 @@ import useFatch from "../useFatch";
 import "./products.css";
 import { Link } from "react-router-dom";
 
+/* This is the function to search among products */
+
 function App() {
   const { data: product } = useFatch("http://localhost:8000/products");
 
@@ -12,16 +14,17 @@ function App() {
     e.preventDefault();
     setNewSearch(e.target.value);
   };
+  /* This is the filter to search among categories of info for each product */
 
   const filtered = !search
     ? product
     : product.filter(
-        (product) =>
-          product.title.toLowerCase().includes(search.toLowerCase()) ||
-          product.category.toLowerCase().includes(search.toLowerCase()) ||
-          product.description.toLowerCase().includes(search.toLowerCase()) ||
-          product.company.toLowerCase().includes(search.toLowerCase())
-      );
+      (product) =>
+        product.title.toLowerCase().includes(search.toLowerCase()) ||
+        product.category.toLowerCase().includes(search.toLowerCase()) ||
+        product.description.toLowerCase().includes(search.toLowerCase()) ||
+        product.company.toLowerCase().includes(search.toLowerCase())
+    );
 
   return (
     <div className="main shop">

@@ -2,14 +2,16 @@ import Logo from "../../img/gifted.png";
 import ProductData from "../product/ProductData";
 import { Link } from "react-router-dom";
 
+/* This is a function to scroll to the shop */
 const scrollToShop = () => {
   window.scrollTo({
     top: 550,
     behavior: 'smooth'
-    /* you can also use 'auto' behaviour
-       in place of 'smooth' */
+
   });
 };
+
+/* This is the main explore page */
 
 const Explore = () => {
   return (
