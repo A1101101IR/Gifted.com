@@ -9,7 +9,6 @@ import { Routes, Route } from "react-router-dom";
 import Product from "./components/product/product";
 import OrderList from "./components/order/order";
 import OrderSummary from "./components/order/OrderSummary";
-
 function App() {
   return (
     <div className="App">

@@ -63,6 +63,7 @@ export default function Navbar() {
             <Link to="components/order/OrderSummary" className="link newOrder">
               <img className="shopping-card-icon" src={Card} width={30} />
               {/* <Notification /> */}
+              {/* <p>{console.log(thisNot.thisNot.length)}</p> */}
             </Link>
           </div>
         </nav>
