@@ -16,7 +16,6 @@ const Order = () => {
       method: "DELETE",
     }).then(() => {
       console.log("Tog bort!");
-      console.log("test");
     });
   };
   const sum = [];
