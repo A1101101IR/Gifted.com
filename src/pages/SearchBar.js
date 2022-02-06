@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import useFatch from "../useFatch";
-import "./products.css";
 import { Link } from "react-router-dom";
-
-function App() {
-  const { data: product } = useFatch("http://localhost:8000/products");
-
+import "./products.css";
+function SearchBar() {
+  const {
+    data: product,
+    isLoading,
+    error,
+  } = useFatch("http://localhost:8000/products");
   const [search, setNewSearch] = useState("");
-
   const handleSearchChange = (e) => {
     e.preventDefault();
     setNewSearch(e.target.value);
   };
-
   const filtered = !search
     ? product
     : product.filter(
@@ -39,6 +39,8 @@ function App() {
       </div>
       {/* <h2 className="page-title">Gift cards</h2> */}
       <div className="product-list">
+        {error && <h2>{error}</h2>}
+        {isLoading && <h2>Loading...</h2>}
         {product &&
           filtered.slice(0, 12).map((product) => (
             <div
@@ -62,4 +64,4 @@ function App() {
   );
 }
 
-export default App;
+export default SearchBar;

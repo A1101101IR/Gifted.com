@@ -1,11 +1,9 @@
-import useFatch from "../../useFatch";
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import ProductList from "../product/ProductList";
 
 const Order = (props) => {
-  const goToOrder = useNavigate();
-
-  /* Hämtar data för att använda senare i vår orderlist. */
+  const sum = [];
+  /* Fetch order data from API and setOrder to fetched data */
   const [order, setOrder] = useState();
   useEffect(() => {
     fetch("http://localhost:8000/order")
@@ -15,12 +13,12 @@ const Order = (props) => {
       });
   }, []);
 
-  /* skapar en delete funktion som tar bort order med delete btn */
+  /* Delete function for each order, after deleting order, order will be fetched again and setOrder to new data */
   const handelClick = (order) => {
     fetch(`http://localhost:8000/order/${order}`, {
       method: "DELETE",
     }).then(() => {
-      console.log("Tog bort!");
+      /* console.log("Deleted Order!"); */
       fetch("http://localhost:8000/order")
         .then((res) => res.json())
         .then((data) => {
@@ -31,13 +29,14 @@ const Order = (props) => {
         });
     });
   };
-  const sum = [];
+
   return (
     <div className="order-summary-container">
       <div className="order-body">
         <div className="order-navbar">
           <h2>
-            You have <span>{}</span> items in your shopping cart!
+            You have <span>{props.orderNotis}</span> items in your shopping
+            cart!
           </h2>
         </div>
         {/* {error && <h2>{error}</h2>}
@@ -81,6 +80,10 @@ const Order = (props) => {
           </div>
         )}
       </div>
+      <div className="space-between-element">
+        <h3>Other products we recommend!</h3>
+      </div>
+      <ProductList />
     </div>
   );
 };

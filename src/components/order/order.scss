@@ -4,6 +4,7 @@
   margin: 80px 0;
   .order-list {
     max-width: 1280px;
+    width: 100%;
     .order-navbar {
       display: flex;
       justify-content: space-between;
@@ -13,10 +14,10 @@
       }
     }
     .order-block {
+      width: 100%;
       padding: 15px 0;
       display: flex;
-      justify-content: center;
-      margin-left: 30px;
+      justify-content: space-between;
       gap: 50px;
       @media screen and (max-width: 620px) {
         flex-direction: column;

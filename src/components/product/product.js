@@ -2,7 +2,8 @@ import { Navigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react/cjs/react.development";
 import useFatch from "../../useFatch";
 import { useNavigate } from "react-router-dom";
-import ProductData from "./ProductData";
+import ProductList from "./ProductList";
+
 /* Här är våran product detalj sida. */
 
 const Product = ({ handleReload }) => {
@@ -140,7 +141,7 @@ const Product = ({ handleReload }) => {
       <div className="space-between-element">
         <h3>Gifted.com best-selling products this week! </h3>
       </div>
-      <ProductData />
+      <ProductList />
     </div>
   );
 };

@@ -1,11 +1,10 @@
 import Logo from "../../img/gifted.png";
-import ProductData from "../product/ProductData";
 import { Link } from "react-router-dom";
 
 const scrollToShop = () => {
   window.scrollTo({
     top: 550,
-    behavior: 'smooth'
+    behavior: "smooth",
     /* you can also use 'auto' behaviour
        in place of 'smooth' */
   });
@@ -22,9 +21,7 @@ const Explore = () => {
           successes.
         </p>
         <div>
-
           <button onClick={scrollToShop}>Explore</button>
-
         </div>
       </div>
 
