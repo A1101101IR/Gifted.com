@@ -11,13 +11,19 @@ import Signup from "./pages/signup";
 import Product from "./components/product/product";
 import OrderList from "./components/order/order";
 import OrderSummary from "./components/order/OrderSummary";
+import Order from "./components/order/order";
 
 function App() {
+  const [order, setOrder] = useState();
   useEffect(() => {
     fetch("http://localhost:8000/order")
       .then((res) => res.json())
-      .then((data) => setOrderNotis(data.length));
-  });
+      .then((data) => {
+        setOrderNotis(data.length);
+        setOrder(data);
+      });
+  }, []);
+
   const [orderNotis, setOrderNotis] = useState();
   const handleReload = () => {
     console.log("order was fetched!");
@@ -41,7 +47,10 @@ function App() {
             path="/pages/products/:id"
             element={<Product handleReload={handleReload} />}
           ></Route>
-          <Route path="/components/order/order" element={<OrderList />}></Route>
+          <Route
+            path="/components/order/order"
+            element={<Order handleReload={handleReload} />}
+          ></Route>
           <Route
             path="/components/order/ordersummary"
             element={<OrderSummary />}

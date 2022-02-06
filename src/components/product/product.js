@@ -38,10 +38,8 @@ const Product = ({ handleReload }) => {
     }).then(() => {
       /* timeout för skapa visuell känsla och sedan går till order summary */
       handleReload();
-      setTimeout(() => {
-        setIsPending(false);
-        goToOrder("/components/order/ordersummary");
-      }, 2000);
+      setIsPending(false);
+      goToOrder("/components/order/order");
     });
   };
 

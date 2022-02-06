@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Navicon from "../../img/navicon.png";
 import Card from "../../img/card.png";
 import { Link } from "react-router-dom";
-import Notification from "../order/notification";
 /* Header components som har Navbar och login/signup inuti */
 export default function Navbar(props) {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -60,7 +59,7 @@ export default function Navbar(props) {
             <Link to="pages/signup" className="link">
               Sign up
             </Link>
-            <Link to="components/order/OrderSummary" className="link newOrder">
+            <Link to="components/order/Order" className="link newOrder">
               <img className="shopping-card-icon" src={Card} width={30} />
               <p>{props.orderNotis}</p>
               {/* <Notification /> */}
