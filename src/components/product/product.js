@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ProductData from "./ProductData";
 /* Här är våran product detalj sida. */
 
-const Product = () => {
+const Product = ({ handleReload }) => {
   const { id } = useParams();
   /* Här hämtar vi data */
   const {
@@ -37,6 +37,7 @@ const Product = () => {
       body: JSON.stringify(order),
     }).then(() => {
       /* timeout för skapa visuell känsla och sedan går till order summary */
+      handleReload();
       setTimeout(() => {
         setIsPending(false);
         goToOrder("/components/order/ordersummary");
