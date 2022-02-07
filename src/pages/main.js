@@ -1,6 +1,4 @@
 import React from "react";
-import Logo from "../img/gifted.png";
-import SearchBar from "./SearchBar";
 import Explore from "../components/explore/Explore";
 import ProductList from "../components/product/ProductList";
 

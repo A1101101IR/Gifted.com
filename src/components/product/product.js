@@ -1,14 +1,13 @@
-import { Navigate, useParams } from "react-router-dom";
-import { useEffect, useState } from "react/cjs/react.development";
 import useFatch from "../../useFatch";
-import { useNavigate } from "react-router-dom";
 import ProductList from "./ProductList";
+import { useState } from "react/cjs/react.development";
+import { useNavigate, useParams } from "react-router-dom";
 
 /* Här är våran product detalj sida. */
 
 const Product = ({ handleReload }) => {
   const { id } = useParams();
-  /* Här hämtar vi data */
+  /* Fetch products data using useFetch */
   const {
     data: product,
     error,
@@ -37,7 +36,6 @@ const Product = ({ handleReload }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order),
     }).then(() => {
-      /* timeout för skapa visuell känsla och sedan går till order summary */
       handleReload();
       setIsPending(false);
       goToOrder("/components/order/order");
@@ -112,7 +110,6 @@ const Product = ({ handleReload }) => {
                 placeholder="Message"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-
               <br />
 
               {/* <label>Your email: </label>
