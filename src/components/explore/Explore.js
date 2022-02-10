@@ -1,6 +1,7 @@
 import Logo from "../../img/gifted.png";
 import { Link } from "react-router-dom";
 
+/* This is a function to scroll to the shop */
 const scrollToShop = () => {
   window.scrollTo({
     top: 550,
@@ -9,6 +10,8 @@ const scrollToShop = () => {
        in place of 'smooth' */
   });
 };
+
+/* This is the main explore page */
 
 const Explore = () => {
   return (
