@@ -7,7 +7,7 @@ const Signup = () => {
     <section className="section-login">
       <div className="container">
         <div className="split">
-          <div className="logo">
+          <div className="login-logo">
             <span>Gifted.</span>
           </div>
           <div className="card">
@@ -33,8 +33,7 @@ const Signup = () => {
             <div className="bottom">
               <input type="checkbox" className="check" />
               <span>
-                I have read and agree to the{" "}
-                {/* Link to login */}
+                I have read and agree to the {/* Link to login */}
                 <Link to="/pages/login" className="link">
                   Terms of Service
                 </Link>

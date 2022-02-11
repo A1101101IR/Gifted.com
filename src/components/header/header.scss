@@ -1,37 +1,18 @@
 @import "../../variables.scss";
 /* Css för header och all element inuti. */
-/* .header {
-  background-color: $dark-beige;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 
-  .navbar {
-    width: 1310px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    ul {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-left: 0;
-    }
-  }
-} */
 .header {
   height: 100px;
   background-color: $dark-beige;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   .toggle-btn {
     padding-right: 20px;
   }
 }
 .navbar {
+  max-width: 1320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +51,7 @@ a:hover {
 }
 .newOrder {
   width: 20px;
-  padding: 5px 12px;
+  padding: 5px 13px;
   border-radius: 15px;
   color: aqua;
   background-color: #3a3a3a;

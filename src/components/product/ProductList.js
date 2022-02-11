@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProductList = () => {
   const { data: product } = useFatch("http://localhost:8000/products");
   return (
-    <div className="product-list main">
+    <div className="product-list">
       {product &&
         product.slice(0, 12).map((product) => (
           <div

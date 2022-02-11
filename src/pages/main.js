@@ -12,9 +12,10 @@ const scrollToProducts = () => {
 };
 const Main = () => {
   return (
-    <div>
+    <>
       <Explore />
-    </div>
+      <ProductList />
+    </>
   );
 };
 
