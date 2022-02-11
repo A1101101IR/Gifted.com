@@ -55,9 +55,6 @@ const Navbar = (props) => {
       )}
       {toggleMenu && (
         <nav className="toggle-navbar">
-          <Link to="/" className="logoo">
-            Gifted.
-          </Link>
           <ul>
             <li>
               <Link to="pages/products" className="link">

@@ -40,6 +40,9 @@
     padding-left: 0px;
   }
 }
+.toggle-navbar {
+  display: none;
+}
 
 a {
   padding: 20px;
@@ -82,7 +85,7 @@ a:hover {
     bottom: 0;
     position: fixed;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
+    background: #f9f1e6ea;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -101,25 +104,23 @@ a:hover {
       padding: 20px;
     }
     a {
-      color: $white;
       font-size: 20px;
     }
   }
-  .logoo {
-    top: 15px;
-    left: 15px;
+  .logo {
+    top: 16px;
+    left: 0px;
     position: fixed;
     font-weight: 700;
     font-size: 23px;
-    color: $white;
     opacity: 100%;
   }
   .logoo:hover {
     color: $dark-beige;
   }
   .toggle-btn {
-    top: 30px;
-    right: 15px;
+    top: 32px;
+    right: 0px;
     position: fixed;
   }
 }
