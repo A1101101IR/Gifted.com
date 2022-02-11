@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import Navicon from "../../img/navicon.png";
 import React, { useState, useEffect } from "react";
-
-/* Header components som har Navbar och login/signup inuti */
-export default function Navbar(props) {
+const Navbar = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const toggleNav = () => {
@@ -20,19 +18,9 @@ export default function Navbar(props) {
       window.removeEventListener("resize", changeWidth);
     };
   }, []);
-
-  /* returnerar header med dess innehåll */
   return (
     <div className="header">
-      {/* <div className="logo-btn">
-        <Link to="/" className="toggle-btn logo">
-          Gifted.
-        </Link>
-      </div> */}
-      <Link to="/" className="link logo">
-        Gifted.
-      </Link>
-      {(toggleMenu || screenWidth > 768) && (
+      {screenWidth > 768 && (
         <nav className="navbar">
           <ul>
             <li>
@@ -65,14 +53,50 @@ export default function Navbar(props) {
           </div>
         </nav>
       )}
-      {!toggleNav && (
+      {toggleMenu && (
+        <nav className="toggle-navbar">
+          <Link to="/" className="logoo">
+            Gifted.
+          </Link>
+          <ul>
+            <li>
+              <Link to="pages/products" className="link">
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link to="pages/contact" className="link">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="pages/login" className="link">
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link to="pages/signup" className="link">
+                Sign up
+              </Link>
+            </li>
+            <li>
+              <Link to="pages/signup" className="link">
+                Order
+              </Link>
+            </li>
+          </ul>
+          <div className="toggle-btn">
+            <img onClick={toggleNav} src={Navicon} width={36} />
+          </div>
+        </nav>
+      )}
+      {screenWidth < 768 && (
         <div className="toggle-btn">
           <img onClick={toggleNav} src={Navicon} width={36} />
         </div>
       )}
-      <div className="toggle-btn">
-        <img onClick={toggleNav} src={Navicon} width={36} />
-      </div>
     </div>
   );
-}
+};
+
+export default Navbar;

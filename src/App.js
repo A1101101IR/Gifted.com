@@ -9,6 +9,7 @@ import Header from "./components/header/Header";
 import Product from "./components/product/product";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Navbar from "./components/header/navbar";
 
 function App() {
   /* Fetch order and set orderNotis to order.lenght */
@@ -30,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header orderNotis={orderNotis} />
+      <Navbar orderNotis={orderNotis} />
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Main />}></Route>

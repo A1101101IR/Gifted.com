@@ -14,7 +14,6 @@ const Main = () => {
   return (
     <div>
       <Explore />
-      <ProductList />
     </div>
   );
 };

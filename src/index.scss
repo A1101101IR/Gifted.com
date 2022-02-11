@@ -32,17 +32,6 @@ body {
   margin: 0px 20px;
 }
 /* CSS for main / content page */
-.main-columns {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 2fr;
-  margin: 15px 15px 15px 15px;
-  padding: 15px 15px 15px 15px;
-}
 
 .main-element {
   padding-bottom: 10px;
