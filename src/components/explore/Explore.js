@@ -24,7 +24,9 @@ const Explore = () => {
           successes.
         </p>
         <div>
-          <button onClick={scrollToShop}>Explore</button>
+          <button className="my-btn" onClick={scrollToShop}>
+            Explore
+          </button>
         </div>
       </div>
 

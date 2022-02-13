@@ -4,12 +4,11 @@ import Signup from "./pages/signup";
 import Contact from "./pages/contact";
 import Products from "./pages/products";
 import Footer from "./components/footer";
-import Order from "./components/order/order";
-import Header from "./components/header/Header";
-import Product from "./components/product/product";
-import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Order from "./components/order/order";
 import Navbar from "./components/header/navbar";
+import { Routes, Route } from "react-router-dom";
+import Product from "./components/product/product";
 
 function App() {
   /* Fetch order and set orderNotis to order.lenght */

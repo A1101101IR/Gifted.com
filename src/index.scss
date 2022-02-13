@@ -44,16 +44,6 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-button {
-  border-radius: 30px;
-  background-color: lightcoral;
-  font-size: 15px;
-  font-weight: 600;
-  border: 2px solid black;
-  padding: 10px;
-  margin: 0px;
-}
-
 /* CSS for shop */
 .shop {
   display: grid;
@@ -80,12 +70,14 @@ button {
 
 .Explore-container {
   max-width: 1280px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   @media screen and (max-width: 992px) {
     flex-direction: column;
+    height: 670px;
   }
   .Explore-left {
     max-width: 600px;

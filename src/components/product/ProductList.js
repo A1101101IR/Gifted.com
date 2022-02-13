@@ -6,7 +6,7 @@ const ProductList = () => {
   return (
     <div className="product-list">
       {product &&
-        product.slice(0, 12).map((product) => (
+        product.slice(0, 15).map((product) => (
           <div
             className={`products-card-sm ${product.company}`}
             key={product.id}
