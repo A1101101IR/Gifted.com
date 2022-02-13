@@ -27,6 +27,7 @@ body {
 .main-content {
   background-color: $light-beige;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   max-width: 1280;
@@ -123,6 +124,7 @@ button {
 /* CSS for Footer and all content in it */
 .footer {
   background-color: $dark-beige;
+  margin-top: 50px;
   height: 420px;
   display: flex;
   align-items: center;
