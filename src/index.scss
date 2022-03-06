@@ -11,9 +11,9 @@ body {
 }
 
 .page-title {
-  display: grid;
-  justify-content: center;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 5px;
+
+  max-width: 100%;
   font-family: $headings;
 }
 
@@ -98,18 +98,22 @@ body {
 .search-bar {
   background-color: white;
   height: 50px;
-  padding: 0px 5px;
   width: 100%;
+  max-width: 1276px;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
   span {
     padding: 0px 15px;
+    font-size: 18px;
   }
   .search {
-    width: auto;
+    width: 100%;
     padding: 10px;
     border: none;
+    margin-right: 15px;
   }
 }
 

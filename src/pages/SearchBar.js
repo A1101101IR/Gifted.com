@@ -13,6 +13,7 @@ function SearchBar() {
     e.preventDefault();
     setNewSearch(e.target.value);
   };
+
   const filtered = !search
     ? product
     : product.filter(
@@ -28,7 +29,7 @@ function SearchBar() {
       {/* <h2 className="page-title">Products</h2> */}
       <div className="page-title">
         <div className="search-bar">
-          <span>Search for gift cards: {""}</span>
+          <span>Search: {""}</span>
           <input
             type="text"
             className="search"
@@ -37,29 +38,35 @@ function SearchBar() {
           />
         </div>
       </div>
-      {/* <h2 className="page-title">Gift cards</h2> */}
-      <div className="product-list">
-        {error && <h2>{error}</h2>}
-        {isLoading && <h2>Loading...</h2>}
-        {product &&
-          filtered.slice(0, 12).map((product) => (
-            <div
-              className={`products-card-sm ${product.company}`}
-              key={product.id}
-            >
-              <div className="product-info-before">
-                <h2>{product.title}</h2>
-                <p>{product.description.substring(0, 125)}...</p>
+      {filtered && (
+        <div className="product-list">
+          {error && <h2>{error}</h2>}
+          {isLoading && <h2>Loading...</h2>}
+          {product &&
+            filtered.slice(0, 12).map((product) => (
+              <div
+                className={`products-card-sm ${product.company}`}
+                key={product.id}
+              >
+                <div className="product-info-before">
+                  <h2>{product.title}</h2>
+                  <p>{product.description.substring(0, 125)}...</p>
+                </div>
+                <div className="product-pris-btn">
+                  <span>${product.price}</span>
+                  <Link to={`/pages/products/${product.id}`}>
+                    <button className="my-btn">Details</button>
+                  </Link>
+                </div>
               </div>
-              <div className="product-pris-btn">
-                <span>${product.price}</span>
-                <Link to={`/pages/products/${product.id}`}>
-                  <button className="my-btn">Details</button>
-                </Link>
-              </div>
-            </div>
-          ))}
-      </div>
+            ))}
+        </div>
+      )}
+      {filtered.length === 0 && (
+        <h1 className="filter-error">
+          OBS, (:{search}) finns inte i vår utbud!
+        </h1>
+      )}
     </div>
   );
 }

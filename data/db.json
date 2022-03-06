@@ -210,45 +210,9 @@
   ],
   "order": [
     {
-      "receiver": "Amir",
-      "message": "Hej",
-      "receiverMail": "Amir@se",
-      "amount": 100,
-      "product": [
-        {
-          "id": 11,
-          "title": "Asos Gift Card",
-          "description": "ASOS is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content, making ASOS.com the hub of a thriving fashion community",
-          "category": "fashion",
-          "company": "asos",
-          "type": "Card",
-          "price": 100
-        }
-      ],
-      "id": 18
-    },
-    {
-      "receiver": "Amir",
-      "message": "Hej",
-      "receiverMail": "Amir@se",
-      "amount": 100,
-      "product": [
-        {
-          "id": 8,
-          "title": "Steam Gift Card",
-          "description": "Steam gift cards are redeemable for games, software, hardware and more on the Steam.com storefront",
-          "category": "game",
-          "company": "steam",
-          "type": "Card",
-          "price": 100
-        }
-      ],
-      "id": 19
-    },
-    {
-      "receiver": "A",
-      "message": "g",
-      "receiverMail": "A@c",
+      "receiver": "Sven",
+      "message": "Grattis på körkortet! ",
+      "receiverMail": "Sven@svensson.se",
       "amount": 100,
       "product": [
         {
@@ -261,7 +225,7 @@
           "price": 100
         }
       ],
-      "id": 20
+      "id": 1
     }
   ]
 }

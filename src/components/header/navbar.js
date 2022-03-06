@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navicon from "../../img/navicon.png";
 import React, { useState, useEffect } from "react";
+
 const Navbar = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
