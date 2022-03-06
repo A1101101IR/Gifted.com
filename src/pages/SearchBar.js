@@ -60,13 +60,15 @@ function SearchBar() {
                 </div>
               </div>
             ))}
+          {filtered.length === 0 && (
+            <h1 className="filter-error">
+              OBS, (:{search}) finns inte i vår utbud!
+            </h1>
+          )}
         </div>
       )}
-      {filtered.length === 0 && (
-        <h1 className="filter-error">
-          OBS, (:{search}) finns inte i vår utbud!
-        </h1>
-      )}
+
+      {/* {!filtered.length === 0 && console.log("ok")} */}
     </div>
   );
 }

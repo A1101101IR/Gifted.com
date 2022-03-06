@@ -210,9 +210,9 @@
   ],
   "order": [
     {
-      "receiver": "Sven",
-      "message": "Grattis på körkortet! ",
-      "receiverMail": "Sven@svensson.se",
+      "receiver": "gifted",
+      "message": "gift",
+      "receiverMail": "gifted@gifted.com",
       "amount": 100,
       "product": [
         {

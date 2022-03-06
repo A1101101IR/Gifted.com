@@ -26,6 +26,9 @@ const Order = (props) => {
         })
         .then((data) => {
           props.handleReload("reload!");
+        })
+        .catch((error) => {
+          console.log("ERROR:", error);
         });
     });
   };
@@ -35,13 +38,15 @@ const Order = (props) => {
       <div className="order-summary-container">
         <div className="order-body">
           <div className="order-navbar">
-            <h2>
-              You have <span>{props.orderNotis}</span> items in your shopping
-              cart!
-            </h2>
+            {order && order.length !== 0 && (
+              <h2 className="filter-error">
+                You have <span>{props.orderNotis}</span> items in your shopping
+                cart!
+              </h2>
+            )}
           </div>
           {/* {error && <h2>{error}</h2>}
-        {isLoading && <h2>Loading...</h2>} */}
+          {isLoading && <h2>Loading...</h2>} */}
           {order && (
             <div className="order-list">
               {order.map((order) => (
@@ -75,10 +80,13 @@ const Order = (props) => {
                   </div>
                 </div>
               ))}
+              {order.length === 0 && (
+                <h1 className="filter-error"> Your shopping cart is empty!</h1>
+              )}
               <div className="order-summary-payment">
-                <h3>Subtotal: ${sum.reduce((a, v) => a + v)}</h3>
+                <h3>Subtotal: ${sum.reduce((a, v) => a + v, 0)}</h3>
                 <button className="my-btn">
-                  Checkout ${sum.reduce((a, v) => a + v)}
+                  Checkout ${sum.reduce((a, v) => a + v, 0)}
                 </button>
               </div>
             </div>
