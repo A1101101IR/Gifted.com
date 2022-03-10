@@ -23,6 +23,12 @@ const ProductList = () => {
             </div>
           </div>
         ))}
+      {!product && (
+        <>
+          <p>Starta databasen!</p>
+          <p>npx json-server --watch data/db.json --port 8000</p>
+        </>
+      )}
     </div>
   );
 };

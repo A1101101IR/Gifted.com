@@ -2,6 +2,14 @@
 
 Gifted is a fictional giftcard E-commerce website where you can buy giftcards and experiences. The project was built with React.js and Sass for styling.
 
+
+```bash
+npm start
+# then
+npx json-server --watch data/db.json --port 8000
+```
+
+
 ### Created By
 
 -   **Amir Nabizadeh**
