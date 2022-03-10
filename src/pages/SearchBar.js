@@ -29,11 +29,12 @@ function SearchBar() {
       {/* <h2 className="page-title">Products</h2> */}
       <div className="page-title">
         <div className="search-bar">
-          <span>Search: {""}</span>
+          {/* <span>Search: {""}</span> */}
           <input
             type="text"
             className="search"
             value={search}
+            placeholder="Search"
             onChange={handleSearchChange}
           />
         </div>

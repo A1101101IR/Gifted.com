@@ -104,16 +104,22 @@ body {
   align-items: center;
   margin-bottom: 30px;
   border-radius: 5px;
-  border: 1px solid black;
+  
   span {
     padding: 0px 15px;
     font-size: 18px;
   }
   .search {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    margin-right: 15px;
+    font-size: 16px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .search:focus {
+    border: none;
   }
 }
 
